@@ -1,14 +1,9 @@
-import { motion } from "framer-motion";
 import styled from "styled-components";
 import LineThrough from "./linethrough";
 
 const MainLogo = () => {
   return (
-    <motion.LogoDiv
-        initial={{opacity:0}}
-        animate={{opacity:1}}
-        transition={{duration :0.5, delay:0.25}}
-    >
+    <LogoDiv>
       <h1 className="first">L&apos;envolée</h1>
       <div className="sub-logo">
         <div className="line">
@@ -16,7 +11,7 @@ const MainLogo = () => {
         </div>
         <h1>Cabinet dentaire</h1>
       </div> 
-    </motion.LogoDiv>
+    </LogoDiv>
   );
 }
 
