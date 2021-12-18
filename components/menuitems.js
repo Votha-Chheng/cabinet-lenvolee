@@ -25,7 +25,11 @@ const MenuItems = ({bandeauInView}) => {
 
   return (  
     <NavStyle>
-      <>
+      <motion.div
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{duration :0.5, delay:0.25}}
+      >
         <motion.div
           className="menuInfo" 
           style={{overflow:"hidden"}}
@@ -86,7 +90,7 @@ const MenuItems = ({bandeauInView}) => {
         >
           <LineThrough backgroundColor="var(--main-color-text)"/>
         </motion.div>  
-      </>     
+      </motion.div>     
     </NavStyle>
   );
 }
