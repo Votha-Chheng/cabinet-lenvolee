@@ -1,0 +1,35 @@
+:root{
+  --font-info: 'Tauri', sans-serif;
+  --main-bgcolor: #363c51;
+  --second-bgcolor : #857467;
+  --main-color-text : #D4AB7C;
+  --font-family-logo :'Frank Ruhl Libre', serif;
+  --font-family-text : 'Hind', sans-serif;
+  --serif-font: 'Lora', serif;
+  --bgcolor-visit-card : #545454;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.menuInfo{
+  width: 1440px;
+  margin: 0 auto;
+}
+@media (max-width : 1500px) {
+  .menuInfo{
+    width: 1160px
+  }
+}
