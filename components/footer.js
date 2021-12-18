@@ -45,7 +45,7 @@ const Footer = () => {
                 </div>
                 <span className="texte">
                   <a href="https://www.google.fr/maps/place/L'envol%C3%A9e+Cabinet+dentaire/@43.6284937,3.895878,17z/data=!4m5!3m4!1s0x12b6af1eb59a905f:0x81b577b1ccc1138e!8m2!3d43.6283792!4d3.8969015" target="_blank" rel="noreferrer">
-                    Résidence L'Envolée<br/>
+                    Résidence L&apos;Envolée<br/>
                     3 place Charles de Gaulle<br/>
                     34 170 Castelnau-le-Lez
                   </a>
@@ -58,7 +58,7 @@ const Footer = () => {
                   <Image src="/images/oncd.svg" width={30} height={30} layout="fixed"/>
                 </div>
                 <a href="http://www.ordre-chirurgiens-dentistes.fr/" target="_blank" rel="noreferrer">
-                  Site de l'ONCD (<em>Ordre national des chirurgiens dentistes</em>)
+                  Site de l&apos;ONCD (<em>Ordre national des chirurgiens dentistes</em>)
                 </a>
               </div>
               <div className="flex-item">
@@ -116,9 +116,8 @@ const Footer = () => {
       </div>
       <LineThrough backgroundColor="var(--main-color-text)"/>
       <div className="footer-down">
-        &copy; <em>Cabinet dentaire L'Envolée</em> - Janvier 2022 | Site conçu par <a href="https://github.com/Votha-Chheng" target="_blank" rel="noreferrer">Votha Chheng</a>
-      </div>
-      
+        &copy; <em>Cabinet dentaire L&apos;Envolée</em> - Janvier 2022 | Site conçu par <a href="https://github.com/Votha-Chheng" target="_blank" rel="noreferrer">Votha Chheng</a>
+      </div>     
     </FooterWrapper>
   );
 }

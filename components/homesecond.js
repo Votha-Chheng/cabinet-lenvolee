@@ -57,7 +57,7 @@ const HomeSecond = () => {
               “Souriez, car vos dents ne sont pas seulement faites pour manger ou pour mordre.”
             </motion.h2>
             <p>
-              Forte de 10 ans d'expérience dans dans la dentisterie de soins, l'esthétique y tient aussi une importante part. In id esse amet excepteur exercitation excepteur. Veniam sit dolor esse fugiat elit veniam esse laboris cupidatat ex dolore ipsum.
+              Forte de 10 ans d&apos;expérience dans dans la dentisterie de soins, l&apos;esthétique y tient aussi une importante part. In id esse amet excepteur exercitation excepteur. Veniam sit dolor esse fugiat elit veniam esse laboris cupidatat ex dolore ipsum.
             </p>
           </div>
           <motion.div

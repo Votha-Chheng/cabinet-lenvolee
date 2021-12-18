@@ -45,7 +45,7 @@ const BandeauInfo = () => {
             <Image src="/images/location.svg" width={40} height={40} layout="fixed"/>
 
               <a href="https://www.google.fr/maps/place/L'envol%C3%A9e+Cabinet+dentaire/@43.6284937,3.895878,17z/data=!4m5!3m4!1s0x12b6af1eb59a905f:0x81b577b1ccc1138e!8m2!3d43.6283792!4d3.8969015" target="_blank" rel="noreferrer">
-                Résidence L'Envolée, 3 place Charles de Gaulle<br/>
+                Résidence L&apos;Envolée, 3 place Charles de Gaulle<br/>
                 34 170 Castelnau-le-Lez
               </a>
 

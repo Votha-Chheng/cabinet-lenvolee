@@ -5,7 +5,7 @@ const HomeBandeauThird = () => {
   return (
     <MainWrapper>
       <h2>Le cabinet</h2>
-      <span>Partie consacrée aux images des équipements du cabinet et de la salle d'attente. (A terminer)</span>
+      <span>Partie consacrée aux images des équipements du cabinet et de la salle d&apos;attente. (A terminer)</span>
       
 
       <div className="img-suite">
