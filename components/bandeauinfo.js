@@ -40,15 +40,15 @@ const BandeauInfo = () => {
               
             </div>
           </div>
-
           <div className="info">
             <Image src="/images/location.svg" width={40} height={40} layout="fixed"/>
-
+            <div className="texteInfo">
               <a href="https://www.google.fr/maps/place/L'envol%C3%A9e+Cabinet+dentaire/@43.6284937,3.895878,17z/data=!4m5!3m4!1s0x12b6af1eb59a905f:0x81b577b1ccc1138e!8m2!3d43.6283792!4d3.8969015" target="_blank" rel="noreferrer">
                 Résidence L&apos;Envolée, 3 place Charles de Gaulle<br/>
                 34 170 Castelnau-le-Lez
               </a>
-
+            </div>
+            
           </div>
         </motion.div>
         
@@ -90,13 +90,16 @@ const DivContainer = styled.div`
     font-family: 'Oswald', sans-serif;
     margin-right: 30px;
     
-    
     .texteInfo{
       margin-left: 10px;
       border-left: 2px solid ;
       padding-left: 5px;
       letter-spacing: 1px;
       font-weight: bold;
+
+      a{
+        font-style: italic;
+      }
     }
   }
 

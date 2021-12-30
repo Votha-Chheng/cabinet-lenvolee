@@ -138,7 +138,6 @@ const FooterWrapper = styled.footer`
 
     .logo-flex{
       align-self: center;
-      margin-left: 30px;
       display: flex;
       flex-direction: column;
       row-gap: 0px;
@@ -149,16 +148,14 @@ const FooterWrapper = styled.footer`
       .logo-container{
         width: 295px;
         margin: 20px auto 0;
-        /* margin-left: 20px;
-        margin-top: 50px; */
       }
 
       .sub-logo-flex{
         display: flex;
         column-gap: 50px;
+        border-top: 1.75px solid var(--main-color-text);
 
-        .mentions{
-          border-left: 1.75px solid var(--main-color-text);
+        .mentions{    
           padding: 10px 0 10px 20px;
           display: flex;
           flex-direction: column;
@@ -166,6 +163,8 @@ const FooterWrapper = styled.footer`
           width: 100%;
 
           &.links{
+            border-left: 1.75px solid var(--main-color-text);
+            
             .flex-item{
               column-gap: 15px;
             }

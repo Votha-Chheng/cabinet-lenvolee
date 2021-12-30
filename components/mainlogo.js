@@ -32,10 +32,11 @@ const LogoDiv = styled.div`
   h1:not(.first){
     font-family : sans-serif;
     font-size: 0.8rem;
-    letter-spacing: 5px;
+    letter-spacing: 4.25px;
     transform: translate(-10px, 0);
-    font-family: var(--font-family-text);
+    font-family: var(--font-info);
     margin-top: 10px;
+    font-weight: lighter;
   }
   .sub-logo{
     display: flex;

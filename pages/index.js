@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import HomeFirst from '@/components/homefirst'
 import HomeSecond from '@/components/homesecond'
-import HomeBandeauThird from '@/components/homebandeauthird'
+import HomeThird from '@/components/homethird'
 
 export default function Home() {
 
@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
       <HomeFirst />
       <HomeSecond/>
-      <HomeBandeauThird/>
+      <HomeThird/>
     </div>
   )
 }

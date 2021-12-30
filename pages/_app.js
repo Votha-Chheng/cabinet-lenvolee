@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
         <meta charSet="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1"/>
         <meta name="description" content="A la recherche d'un massage ou d'un moment propice à la détente sur Arles et la région des Alpilles ?... Baux'T des sens vous propose des séances de massage à domicile et d'initiation au Hata yoga."/>
-        <meta property="og:title" content="Baux'T des sens, massage à domicile et yoga Arles Alpilles & Baux de Provence." />
+        <meta property="og:title" content="Cabinet dentaire L'Envolée du Dr Sylvie Ma-Francin à Castelnau-le-Lez" />
         <meta property="og:image" content="https://zupimages.net/up/21/33/4t0a.jpg"/>
         <meta property="og:image:type" content="image/jpg"/>
         <meta property="og:type" content="website" />
@@ -33,17 +33,17 @@ function MyApp({ Component, pageProps }) {
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet"/>
       </Head>
 
 
       <div style={{backgroundColor:"var(--main-bgcolor)"}}>
         <BgColorProvider>
-          <BandeauInfo/> 
-          <InView onChange={(inView, entry)=> setBandeauInView(inView)} />
-          <MenuItems bandeauInView={bandeauInView}/>
-              
-          <Component {...pageProps}/>
-          <Footer/>
+            <BandeauInfo/> 
+            <InView onChange={(inView, entry)=> setBandeauInView(inView)} />
+            <MenuItems bandeauInView={bandeauInView}/>      
+            <Component {...pageProps}/>
+            <Footer/>
         </BgColorProvider>
     
       </div>  

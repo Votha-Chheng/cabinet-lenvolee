@@ -16,6 +16,7 @@ LineThrough.defaultProps = {
 
 const LineThroughStyle = styled.div`
   margin: 0 auto;
+  transition: background-color 0.3s ease-out;
 `
 export default LineThrough;
 

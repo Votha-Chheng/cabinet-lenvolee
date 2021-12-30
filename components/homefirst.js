@@ -92,7 +92,7 @@ const HomeFirst = () => {
   }
   const childrenFolderToLeft = {
     hidden:{
-      x : "300%",
+      x : "400%",
       opacity : 1
     },
     movement:{
@@ -107,7 +107,7 @@ const HomeFirst = () => {
   }
   const childrenFolderToRightTop = {
     hidden:{
-      x : "-300%",
+      x : "-400%",
       opacity: 1,
     },
     movement:{
@@ -122,7 +122,7 @@ const HomeFirst = () => {
   }
   const childrenFolderToRightBottom = {
     hidden:{
-      x : "-300%",
+      x : "-400%",
       opacity: 1,
     },
     movement:{
@@ -147,22 +147,27 @@ const HomeFirst = () => {
         <motion.div 
           variants={childrenToBottom} 
           className="border-left"
+          style={{backgroundColor:`${triggerOne ? "whitesmoke":"var(--main-color-text)"}`}}
         />
         <motion.div 
           variants={childrenToTop} 
           className="border-between"
+          style={{backgroundColor:`${triggerOne ? "whitesmoke":"var(--main-color-text)"}`}}
         />
         <motion.div 
           variants={childrenToBottom} 
           className="border-right"
+          style={{backgroundColor:`${triggerOne ? "whitesmoke":"var(--main-color-text)"}`}}
         />
         <motion.div 
           variants={childrenToRight}
           className="border-bottom-between"
+          
         />
         <motion.div 
           variants={childrenToLeft}
           className="border-bottom"
+          style={{backgroundColor:`${triggerOne ? "whitesmoke":"var(--main-color-text)"}`}}
         />
         <article className="flex-article">
           <motion.div 
@@ -188,13 +193,13 @@ const HomeFirst = () => {
           <div className="flex-item for-quote">
             <div>
               <div className="quote">
-                <motion.h2
+                <motion.h1
                   initial={{opacity:0, y:15}}
                   animate={{opacity:1,  y:0}}
                   transition={{delay:3, duration:1, ease:"easeOut"}}
                 >
                   Dr. Sylvie Ma-Francin
-                </motion.h2>
+                </motion.h1>
                 <motion.div
                   variants={parentFadeIn} 
                   initial="start"
@@ -205,7 +210,7 @@ const HomeFirst = () => {
                     animate={{opacity:1,  y:0}}
                     transition={{opacity: {delay:3, duration:1, ease:"easeOut"}, y: {delay:2.75, duration:1, ease:"easeOut"}}}
                   >
-                    Chirurgien dentiste
+                    Chirurgienne dentiste
                   </motion.h3>
                   <motion.h4>
                     <motion.div 
@@ -266,13 +271,12 @@ const MainWrapper = styled.main`
   height:900px;
   width:100%;
   overflow: hidden;
-  padding: 0 0 200px;
+  padding: 0 0 275px;
   transition: background-color 0.3s ease-out;
 
   .container{
     width:1440px;
     height: 100%;
-    //background-color: var(--main-bgcolor); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -290,7 +294,7 @@ const MainWrapper = styled.main`
   .border-left{
     left: 0;
     top: 0;
-    height: 105%;
+    height: 110%;
   }
   .border-right{
     right: -1px;
@@ -300,7 +304,7 @@ const MainWrapper = styled.main`
   .border-between{
     left: 50%;
     top: 0;
-    height: 107%;
+    height: 200%;
     width: 2px;
   }
 
@@ -377,7 +381,7 @@ const MainWrapper = styled.main`
         text-align: center;
         margin: 0 auto;
         
-        h2{
+        h1{
           font-size: 2.6rem;
           letter-spacing: 0.75px;
           font-family: var(--serif-font);
@@ -402,8 +406,8 @@ const MainWrapper = styled.main`
         }
         h4{
           margin: 0;
-          font-size: 1.15rem;
-          letter-spacing: 0.75px;
+          font-size: 1.2rem;
+          letter-spacing: 1.25px;
           font-family: var(--font-family-text);
           z-index: 1;
           position: relative;
