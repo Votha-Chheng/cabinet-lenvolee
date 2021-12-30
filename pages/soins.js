@@ -6,7 +6,7 @@ const SoinsPage = () => {
     <MainWrapper>
       <Hero img="soins-hero-2.jpg" title="Nos soins"/>
       <main className="menuInfo">
-        <h3>Détartrage</h3>
+        {/* <h3>Détartrage</h3>
         <p>Ne pas confondre plaque dentaire et tartre</p>
         <p>
           La plaque est un film épais sur les dents, constitué de salive et de particules d'aliments qui s'accumule à la ligne gingivale. L'acide de la plaque peut attaquer les dents peu de temps après les repas, s'il n'est pas nettoyé, il peut traverser l'émail et se transformer en carie. La plaque endommage également les gencives et peut être la cause de gencives rouges, enflées ou qui saignent lors du brossage.
@@ -61,7 +61,7 @@ const SoinsPage = () => {
           Améliorer les problèmes d’esthétique liés à de légères malpositions des dents.
 
           Retrouver un sourire harmonieux.
-        </p>
+        </p> */}
 
       </main>
     </MainWrapper>

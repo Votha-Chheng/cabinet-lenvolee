@@ -8,7 +8,7 @@ const HygienePage = () => {
       
       <Hero img="prevention-2.jpg" title="Garder une bonne hygiène dentaire" />
       <main className="menuInfo">
-        <ul>
+        {/* <ul>
           <li>Tartre</li>
           <p>
             Comment prévenir l’apparition de plaque dentaire et tartre ?
@@ -57,7 +57,7 @@ const HygienePage = () => {
           <p>
             Buvez beaucoup d’eau pour bien vous hydrater. La quantité d’eau dont vous avez besoin dépend de votre constitution et de votre activité quotidienne. Mâchez des chewing-gums sans sucre pour stimuler la production de salive. Manger un bonbon à la menthe est une solution temporaire pour rafraîchir l’haleine, mais moins recommandée car pouvant laisser un résidu sucré. Une mauvaise haleine chronique pouvant être le signe d’une maladie plus grave, nous vous recommandons de consulter votre dentiste ou un professionnel de santé. Découvrez quels aliments peuvent donner mauvaise haleine. Pensez à limiter tout ce qui peut intensifier la mauvaise haleine, comme la cigarette ou l’alcool.
           </p>
-        </ul>
+        </ul> */}
       </main>
       
     </MainWrapper>
