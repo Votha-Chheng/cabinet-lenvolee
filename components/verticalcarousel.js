@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Image from "next/image"
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Modal from "./modal";
 import { useTriggerInview } from "@/context/BgColorContext";
 import ImageModal from "./imagemodal";
@@ -10,8 +10,17 @@ import LineThrough from "./linethrough";
 const VerticalCarousel = ({triggerAnim, triggerColorLines}) => {
 
   const [imgModal, setImgModal] = useState("")
+  const [mediaQuery, setMediaQuery] = useState(0)
 
   const {show, setShow} = useTriggerInview()
+
+  const widthRef = useRef()
+
+  useEffect(()=>{
+    if(widthRef.current){
+      setMediaQuery(widthRef.current.offsetWidth)
+    }
+  }, [mediaQuery])
 
   const getImgId = (event)=>{
     setImgModal(event.target.id)
@@ -75,7 +84,7 @@ const VerticalCarousel = ({triggerAnim, triggerColorLines}) => {
   }
 
   return (
-    <CarouselWrap>
+    <CarouselWrap ref={widthRef}>
       <div className="row-box">
         <motion.div 
           className="col-box"
@@ -93,35 +102,35 @@ const VerticalCarousel = ({triggerAnim, triggerColorLines}) => {
           </motion.div>
           <motion.div 
             className="col-1"
-            variants={topBoxAnim}
+            variants={mediaQuery>769 ? topBoxAnim : ""}
             initial="initial"
             animate="animate"
           > 
-            <div className="img-small-container" id="lobby.jpg">
-              <ImageModal img='lobby.jpg' getImgId={getImgId}/>
+            <div className="img-small-container">
+              <ImageModal img='lobby' getImgId={getImgId}/>
             </div>
-            <div className="img-small-container" id="accueil-one.jpg">
-              <ImageModal img='accueil-one.jpg' getImgId={getImgId}/>
+            <div className="img-small-container">
+              <ImageModal img='accueil-one' getImgId={getImgId}/>
             </div>
-            <div className="img-small-container" id="entree.jpg">
-              <ImageModal img='entree.jpg' getImgId={getImgId}/>
+            <div className="img-small-container">
+              <ImageModal img='entree' getImgId={getImgId}/>
             </div> 
           </motion.div>
 
           <motion.div 
             className="col-2"
-            variants={middleBoxAnim}
+            variants={mediaQuery>769 ? middleBoxAnim : ""}
             initial="initial"
             animate="animate"
           >
-            <div className="img-small-container" id="lobby.jpg">
-              <ImageModal img='lobby.jpg' getImgId={getImgId}/>
+            <div className="img-small-container">
+              <ImageModal img='lobby' getImgId={getImgId}/>
             </div>
-            <div className="img-small-container" id="accueil-one.jpg">
-              <ImageModal img='accueil-one.jpg' getImgId={getImgId}/>
+            <div className="img-small-container">
+              <ImageModal img='accueil-one' getImgId={getImgId}/>
             </div>
-            <div className="img-small-container" id="entree.jpg">
-              <ImageModal img='entree.jpg' getImgId={getImgId}/>
+            <div className="img-small-container">
+              <ImageModal img='entree' getImgId={getImgId}/>
             </div>         
           </motion.div>           
         </motion.div>
@@ -151,42 +160,42 @@ const VerticalCarousel = ({triggerAnim, triggerColorLines}) => {
           </motion.div>
           <motion.div 
             className="col-1"
-            variants={rightTopBoxAnim}
+            variants={mediaQuery>769 ? rightTopBoxAnim : ""}
             initial="initial"
             animate="animate"
           >
             <div className="img-small-container">
-              <ImageModal img='accueil-3.jpg' getImgId={getImgId}/>
+              <ImageModal img='accueil-3' getImgId={getImgId}/>
             </div>
             <div className="img-small-container">
-              <ImageModal img='accueil-2.jpg' getImgId={getImgId}/>
+              <ImageModal img='accueil-2' getImgId={getImgId}/>
             </div>
             <div className="img-small-container">
-              <ImageModal img='salle-attente(2).jpg' getImgId={getImgId}/>
+              <ImageModal img='salle-attente(2)' getImgId={getImgId}/>
             </div>
           </motion.div>
 
           <motion.div 
             className="col-2"
-            variants={rightMiddleBoxAnim}
+            variants={mediaQuery>769 ? rightMiddleBoxAnim : ""}
             initial="initial"
             animate="animate"
           >
             <div className="img-small-container">
-              <ImageModal img='accueil-3.jpg' getImgId={getImgId}/>
+              <ImageModal img='accueil-3' getImgId={getImgId}/>
             </div>
             <div className="img-small-container">
-              <ImageModal img='accueil-2.jpg' getImgId={getImgId}/>
+              <ImageModal img='accueil-2' getImgId={getImgId}/>
             </div>
             <div className="img-small-container">
-              <ImageModal img='salle-attente(2).jpg' getImgId={getImgId}/>
+              <ImageModal img='salle-attente(2)' getImgId={getImgId}/>
             </div>
           </motion.div>
           
         </motion.div>
       </div>
       <Modal show={show}>
-        <Image src={`/images/${imgModal}`} layout="fill" objectFit="contain"/>
+        <Image src={`/images/${imgModal}.jpg`} layout="fill" objectFit="contain"/>
       </Modal>
     </CarouselWrap>
   );
@@ -249,7 +258,6 @@ const CarouselWrap = styled.div`
     z-index: 5;
     position: relative;
   }
-
   
 `
 export default VerticalCarousel;

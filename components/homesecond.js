@@ -257,8 +257,7 @@ const HomeSecond = () => {
         transition={{duration:0.25, ease:"easeOut"}}
       >
         <ButtonCall/>
-      </motion.div>
-      
+      </motion.div>  
     </DivWrapper>
   );
 }
@@ -282,13 +281,6 @@ const DivWrapper = styled.div`
       height:40%;
     }
   }
-
-  /* .title-second-bandeau{  
-    h2{
-      color : var(--main-bgcolor);
-      margin : 30px auto;
-    }
-  } */
 
   h3{
     color : var(--main-bgcolor);
@@ -354,7 +346,6 @@ const DivWrapper = styled.div`
       justify-content: space-around;
       column-gap:25px;
       margin: 0 auto;
-      //overflow: hidden;
       position: relative;
 
       .line-container{
@@ -368,7 +359,6 @@ const DivWrapper = styled.div`
           left: auto;
           top: 55%;
           right:7.5%;
-          
         }
       }
 
@@ -423,6 +413,10 @@ const DivWrapper = styled.div`
   .button-call{
     padding: 200px 0 0;
   } 
+
+  @media (max-width:768px){
+    display: none;
+  }
   
 `
 

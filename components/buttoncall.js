@@ -2,9 +2,21 @@ import styled from "styled-components";
 import Image from "next/image";
 import { useTriggerInview } from "context/BgColorContext";
 import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 
 const ButtonCall = () => {
+
+  const [mediaQuery, setMediaQuery] = useState(0)
+
   const {triggerOne} = useTriggerInview()
+
+  const widthRef = useRef()
+
+  useEffect(()=>{
+    if(widthRef.current){
+      setMediaQuery(widthRef.current.offsetWidth)
+    }
+  }, [mediaQuery])
 
   const parentsParcoursAnim = {
     initial: {
@@ -56,8 +68,8 @@ const ButtonCall = () => {
   }
 
   return (
-    <ButtonWrap style={{backgroundColor:`${triggerOne ? "whitesmoke" : "#363c51"}`}}>
-      <motion.a href="tel:0624861010" variants={parentsParcoursAnim} initial="initial" whileHover="animate" >
+    <ButtonWrap ref={widthRef} style={{backgroundColor:`${triggerOne ? "whitesmoke" : "#363c51"}`}}>
+      <motion.a href="tel:0624861010" variants={mediaQuery>768 ? parentsParcoursAnim : ""} initial="initial" whileHover="animate" >
         <motion.div 
           className="light"
           variants={parcoursAnim}
@@ -226,6 +238,43 @@ const ButtonWrap = styled.div`
         transition: opacity 0.1s linear;
         transition-delay: 0.2s;
         transition-property: opacity;
+      }
+    }
+  }
+
+  @media (max-width:768px){
+    &>a {
+      &:active{
+        transform: scale(1.1);
+      }
+      &:hover{
+        transform: scale(1.1);
+
+        span{
+          color : var(--main-bgcolor);
+        }
+        .horizontal.top{
+          background-color:inherit;
+        }
+        .horizontal.bottom{
+          background-color:inherit;
+
+        }
+        .vertical.last{
+          background-color:inherit;
+        }
+
+        .light{
+          display : none
+        }
+        .phone{
+          .phone-black{
+            opacity: 1;
+          }
+          .phone-blue{
+            display : none;
+          }
+        }
       }
     }
   }

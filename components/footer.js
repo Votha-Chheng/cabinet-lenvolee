@@ -205,6 +205,26 @@ const FooterWrapper = styled.footer`
     text-align: center;
     font-weight:bold;
   }
+
+  @media (max-width:768px){
+    .footer-up{
+      .logo-flex{
+        height: 100%;
+      }
+    }
+
+    .location-flex{
+      display: none;
+    }
+  }
+  @media (max-width:560px){
+    .footer-up{
+      .logo-flex{
+        .sub-logo-flex{
+          flex-direction: column !important;
+        }
+      }
+    }
 `
 
 export default Footer;

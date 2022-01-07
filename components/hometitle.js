@@ -60,8 +60,15 @@ const hometitle = ({triggerLine, title, lineColor}) => {
 
 const TitleWrapper = styled.div`
   h2{
-    //color : var(--main-bgcolor);
     margin : 30px auto;
   }
+
+  @media (max-width : 768px){
+    h2{
+      margin : 10px auto;
+    }
+  }
+
+
 `
 export default hometitle;

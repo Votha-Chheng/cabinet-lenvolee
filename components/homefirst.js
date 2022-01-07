@@ -281,8 +281,7 @@ const MainWrapper = styled.main`
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    position: relative;
-    
+    position: relative;  
   }
 
   .border-left, .border-right, .border-between{
@@ -429,6 +428,10 @@ const MainWrapper = styled.main`
         }
       }
     }
+  }
+
+  @media (max-width: 768px){
+    display: none;
   }
 
 `

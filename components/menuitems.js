@@ -6,7 +6,6 @@ import LineThrough from "./linethrough";
 import { useRouter } from "next/router";
 
 const MenuItems = ({bandeauInView}) => {
-  const [logoWidth, setLogoWidth] = useState(0);
   const [firstMenuItemX, setFirstMenuItemX] = useState(0);
 
   const logoMini = useRef(null)
@@ -17,10 +16,8 @@ const MenuItems = ({bandeauInView}) => {
 
   useEffect(()=>{
     setTimeout(()=> {
-      setLogoWidth(logoMini.current.clientWidth)
       setFirstMenuItemX(firstMenuItem.current.offsetLeft)
-    },500)
-    
+    }, 500)
   }, [])
 
   return (  
@@ -39,7 +36,7 @@ const MenuItems = ({bandeauInView}) => {
                 <a><img src="/images/logo.svg" width="125" /></a>
               </Link>
             </li> 
-            <li ref={firstMenuItem}>
+            <li className="item" ref={firstMenuItem}>
               <Link href="/soins">
                 <a>Nos soins</a>
               </Link>
@@ -48,7 +45,7 @@ const MenuItems = ({bandeauInView}) => {
                 style={{transform: `translateX(${pathname === "/soins" ? 0: -100}%)`}}
               />
             </li>
-            <li>
+            <li className="item">
               <Link href="/hygiene">
                 <a>Hygiène dentaire</a>
               </Link>
@@ -57,7 +54,7 @@ const MenuItems = ({bandeauInView}) => {
                 style={{transform: `translateX(${pathname === "/hygiene" ? 0: -100}%)`}}
               />
             </li>
-            <li>
+            <li className="item">
               <Link href="/urgences">
                 <a>Urgences</a>
               </Link>
@@ -66,7 +63,7 @@ const MenuItems = ({bandeauInView}) => {
                 style={{transform: `translateX(${pathname === "/urgences" ? 0: -100}%)`}}
               />
             </li>
-            <li>
+            <li className="item">
               <Link href="/infos">
                 <a>Infos pratiques</a>
               </Link>
@@ -79,6 +76,7 @@ const MenuItems = ({bandeauInView}) => {
         </motion.div>
 
         <motion.div 
+          className="line-bottom"
           style={{overflow:"hidden", width:"100%"}}
           initial={{x:"-100%"}}
           animate={{x:0}}
@@ -132,6 +130,38 @@ const NavStyle = styled.nav`
     li.logo-item{
       padding-top: 10px;
     }
+  }
+
+
+  @media (max-width: 1500px){
+    
+  }
+
+  @media (max-width: 1160px){
+    width: 100%;
+
+    .line-bottom{
+      margin-top: 10px;
+    }
+
+    ul.menu-items{
+      width :80vw;
+      margin-left: 15px;
+      align-items: flex-start;
+
+      li.item{
+        padding-top: 10px;
+      }
+
+      li.logo-item{
+        display: none;
+      }
+      
+    }
+  }
+
+  @media (max-width: 768px){
+    display: none;   
   }
 
 `
