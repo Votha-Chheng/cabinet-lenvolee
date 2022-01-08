@@ -4,9 +4,7 @@ import LineThrough from "./linethrough";
 
 const MainLogo = () => {
   return (
-    <motion.LogoDiv
-      initial={{opacity:0}}
-    >
+    <LogoDiv>
       <h1 className="first">L&apos;envolée</h1>
       <div className="sub-logo">
         <div className="line">
@@ -14,7 +12,7 @@ const MainLogo = () => {
         </div>
         <h1>Cabinet dentaire</h1>
       </div> 
-    </motion.LogoDiv>
+    </LogoDiv>
   );
 }
 
