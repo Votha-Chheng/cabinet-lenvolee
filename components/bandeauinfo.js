@@ -82,6 +82,7 @@ const DivContainer = styled.div`
 
   .burger-menu{
     display: none;
+    opacity: 0;
     position: absolute;
     right:10px;
     cursor:pointer;
@@ -182,6 +183,7 @@ const DivContainer = styled.div`
     border-bottom:2px solid var(--main-color-text);
 
     .burger-menu{
+      opacity: 1;
       display: block;
       margin: 0;
     }
