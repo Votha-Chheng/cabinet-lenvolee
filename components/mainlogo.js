@@ -5,20 +5,31 @@ import LineThrough from "./linethrough";
 const MainLogo = () => {
   return (
     <LogoDiv>
-      <h1 className="first">L&apos;envolée</h1>
-      <div className="sub-logo">
-        <div className="line">
-          <LineThrough width="100%" height="1.5px" backgroundColor="#D4AB7C"/>
-        </div>
-        <h1>Cabinet dentaire</h1>
-      </div> 
+      <motion.div 
+        className="logo-container"
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{duration:1, delay:5, ease:"easeOut"}}
+      >
+        <h1 className="first">L&apos;envolée</h1>
+        <div className="sub-logo">
+          <div className="line">
+            <LineThrough width="100%" height="1.5px" backgroundColor="#D4AB7C"/>
+          </div>
+          <h1>Cabinet dentaire</h1>
+        </div> 
+      </motion.div>
+      
     </LogoDiv>
   );
 }
 
 const LogoDiv = styled.div`
-  text-transform: uppercase; 
-  color: var(--main-color-text);
+  .logo-container{
+    text-transform: uppercase; 
+    color: var(--main-color-text);
+  }
+  
   
   h1.first{
     font-family: var(--font-family-logo);
