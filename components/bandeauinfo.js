@@ -18,13 +18,19 @@ const BandeauInfo = () => {
             <MainLogo/>
           </a>
         </Link>
-        <div className="burger-menu" onClick={()=>setSideMenu(prev=>!prev)}>
+        <motion.div 
+          className="burger-menu" 
+          onClick={()=>setSideMenu(prev=>!prev)}
+          initial={{opacity:0}}
+          animate={{opacity:1}}
+          transition={{duration:1, delay:0.5, ease:"easeOut"}}
+        >
           <div className="images">
             <img src="/images/burger-menu.svg" width="35" style={{opacity : `${!sideMenu  ? 1 : 0}`}} />
             <img src="/images/close.svg" width="20" style={{opacity : `${!sideMenu  ? 0 : 1 }`}}  />
           </div>
           
-        </div>
+        </motion.div>
         <motion.div 
           className='aside'
           initial={{opacity:0}}
