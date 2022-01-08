@@ -37,17 +37,17 @@ const MenuItems = ({bandeauInView}) => {
               </Link>
             </li> 
             <li className="item" ref={firstMenuItem}>
-              <Link href="/soins">
-                <a>Nos soins</a>
+              <Link href="/ethique">
+                <a>Notre éthique</a>
               </Link>
               <div 
-                className={pathname === "/soins" ? "active" : ""}
-                style={{transform: `translateX(${pathname === "/soins" ? 0: -100}%)`}}
+                className={pathname === "/ethique" ? "active" : ""}
+                style={{transform: `translateX(${pathname === "/ethique" ? 0: -100}%)`}}
               />
             </li>
             <li className="item">
               <Link href="/hygiene">
-                <a>Hygiène dentaire</a>
+                <a>Prévention dentaire</a>
               </Link>
               <div 
                 className={pathname === "/hygiene" ? "active" : ""}
@@ -95,10 +95,10 @@ const NavStyle = styled.nav`
   background-color: var(--main-bgcolor);
   z-index: 5;
   
-  ul.menu-items{
+  .menu-items{
     display: flex;
     list-style: none;
-    width: 75%;
+    width: 80%;
     padding: 0;
     justify-content: space-between;
     margin : 0;
@@ -132,11 +132,11 @@ const NavStyle = styled.nav`
     }
   }
 
-
-  @media (max-width: 1500px){
-    
+  @media (max-width: 1360px){
+    ul.menu-items{
+      width: 100%;
+    }
   }
-
   @media (max-width: 1160px){
     width: 100%;
 
@@ -145,9 +145,9 @@ const NavStyle = styled.nav`
     }
 
     ul.menu-items{
-      width :80vw;
+      width :90vw;
       margin-left: 15px;
-      align-items: flex-start;
+      align-items: space-between;
 
       li.item{
         padding-top: 10px;
@@ -157,6 +157,14 @@ const NavStyle = styled.nav`
         display: none;
       }
       
+    }
+  }
+
+  @media (max-width: 935px){
+    ul.menu-items{
+      li.item{
+        font-size: 1.1rem;
+      }     
     }
   }
 

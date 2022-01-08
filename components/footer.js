@@ -206,7 +206,7 @@ const FooterWrapper = styled.footer`
     font-weight:bold;
   }
 
-  @media (max-width:768px){
+  @media (max-width:1175px){
     .footer-up{
       .logo-flex{
         height: 100%;

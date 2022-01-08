@@ -430,6 +430,29 @@ const MainWrapper = styled.main`
     }
   }
 
+  @media (max-width: 1450px){
+    .container{
+      width: 95%;
+
+      .flex-item .quote {
+        padding: 0;
+
+        h1{
+          font-size: 1.6rem;
+          margin-bottom: 5px;
+        }
+        h3{
+          font-size: 1.15rem;
+        }
+        h4{
+          .text{
+            font-size: 1rem;
+          }
+        }
+      } 
+    } 
+  }
+
   @media (max-width: 768px){
     display: none;
   }

@@ -63,6 +63,12 @@ const TitleWrapper = styled.div`
     margin : 30px auto;
   }
 
+  @media (max-width : 1090px){
+    h2{
+      font-size: 2.25rem;
+    }
+  }
+
   @media (max-width : 768px){
     h2{
       margin : 10px auto;

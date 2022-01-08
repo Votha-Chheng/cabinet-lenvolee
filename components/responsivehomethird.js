@@ -20,7 +20,7 @@ const ResponsiveHomeThird = () => {
       <HomeTitle 
         triggerLine={partInView} 
         lineColor="whitesmoke" 
-        title="Un cadre relaxant et raffiné"
+        title="Un accueil dans un cadre relaxant"
         titleColor="whitesmoke"
       />
       <InView as="div" className="inview-line" onChange={setPartInViewOnce} />

@@ -150,6 +150,12 @@ const HomeSecond = () => {
           <LineThrough width="2px" height="100%" backgroundColor="var(--main-bgcolor)" />
         </motion.div>
         <motion.div 
+          className="vertical-line up-responsive"
+          variants={childrenVerticalLinesToTop}
+        >
+          <LineThrough width="2px" height="100%" backgroundColor="var(--main-bgcolor)" />
+        </motion.div>
+        <motion.div 
           className="vertical-line right"
           variants={childrenVerticalLinesToBottom}
         >
@@ -157,6 +163,14 @@ const HomeSecond = () => {
         </motion.div>
         <motion.div 
           className="vertical-line down"
+          variants={childrenVerticalLinesToTop}
+          initial="start"
+          animate={secondBandeauTrigger && "animation"}
+        >
+          <LineThrough width="2px" height="100%" backgroundColor="var(--main-bgcolor)" />
+        </motion.div>
+        <motion.div 
+          className="vertical-line down-responsive"
           variants={childrenVerticalLinesToTop}
           initial="start"
           animate={secondBandeauTrigger && "animation"}
@@ -320,6 +334,12 @@ const DivWrapper = styled.div`
         bottom:0;
         height:55%;
       }
+      &.down-responsive{
+        display: none;
+      }
+      &.up-responsive{
+        display: none;
+      }
     }
     .horizontal-line{
       height:2px;
@@ -413,6 +433,51 @@ const DivWrapper = styled.div`
   .button-call{
     padding: 200px 0 0;
   } 
+
+  @media (max-width:1360px){
+    .container-bandeau {
+      width: 95%;
+
+      .vertical-line{
+        width:2px; 
+        position: absolute;
+        z-index:2;
+
+        &.up{
+          display: none;
+        }
+        &.down{
+          display: none;
+        }
+        &.down-responsive{
+          left:350px;
+          bottom:0;
+          height:55%;
+          display: block;
+        }
+        &.up-responsive{
+          right:350px;
+          top:0;
+          height:55%;
+          display: block;
+        }
+      }
+    }
+    .bandeau-first{
+      .flex-container{
+        height:450px;
+        width: 100%;
+
+        .line-container{
+          width:90%;
+        }
+
+        .img-container {
+          min-width: 350px;
+        }
+      }
+    }
+  }
 
   @media (max-width:768px){
     display: none;

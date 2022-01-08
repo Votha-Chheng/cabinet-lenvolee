@@ -37,8 +37,8 @@ const BandeauInfo = () => {
           <div className="info">
             <Image className="svg-img" src="/images/clock.svg" width={40} height={40} layout="fixed" />
             <div className="texteInfo">
-              <div><em>Lundi - Mardi - Jeudi - Vendredi</em></div>
-              <div style={{textAlign:"center"}}><em>9h00 à 16h00</em></div> 
+              <div><em>Du Lundi au Vendredi</em></div>
+              <div style={{textAlign:"center"}}><em>9h00 à 19h00</em></div> 
             </div>
           </div>
 
@@ -46,7 +46,7 @@ const BandeauInfo = () => {
             <Image src="/images/phone-mail.svg" width={40} height={40} layout="fixed"/>
             <div className="texteInfo">  
               <div><em><a href="tel:0467756811">04 67 75 68 11</a></em></div>
-              <div><a href="mailto:votha_chheng@gmx.fr">votha_chheng@gmx.fr</a></div>   
+              <div><a href="mailto: cabinetdentaire.lenvolee@gmail.com">cabinetdentaire.lenvolee@gmail.com</a></div>   
             </div>
           </div>
           <div className="info local">

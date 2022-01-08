@@ -24,7 +24,7 @@ const HomeThird = () => {
       <Hometitle 
         triggerLine={partInView} 
         lineColor="whitesmoke" 
-        title="Un accueil dans un cadre<br/>relaxant et raffiné"
+        title="Un accueil dans<br/>un cadre relaxant"
         titleColor="whitesmoke"
       />
       <InView as="div" className="inview-line" onChange={setPartInViewOnce} />
