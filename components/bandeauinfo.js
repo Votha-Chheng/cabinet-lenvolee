@@ -52,7 +52,10 @@ const BandeauInfo = () => {
             <Image src="/images/phone-mail.svg" width={40} height={40} layout="fixed"/>
             <div className="texteInfo">  
               <div><em><a href="tel:0467756811">04 67 75 68 11</a></em></div>
-              <div><a href="mailto: cabinetdentaire.lenvolee@gmail.com">cabinetdentaire.lenvolee@gmail.com</a></div>   
+              <div>
+                <a className='wide' href="mailto:cabinetdentaire.lenvolee@gmail.com">cabinetdentaire.lenvolee@gmail.com</a>
+                <a className='responsive' href="mailto: cabinetdentaire.lenvolee@gmail.com">cabinetdentaire.lenvolee<br/>@gmail.com</a>
+              </div>   
             </div>
           </div>
           <div className="info local">
@@ -85,6 +88,13 @@ const DivContainer = styled.div`
   justify-content: space-between;
   background-color: var(--main-bgcolor);
   z-index: 5;
+
+  .wide{
+    display: block;
+  }
+  .responsive{
+    display: none;
+  }
 
   .burger-menu{
     display: none;
@@ -217,6 +227,15 @@ const DivContainer = styled.div`
         }
       }
     }
+  }
+  @media (max-width: 410px){
+    .wide{
+    display: none;
+  }
+  .responsive{
+    display: block;
+    text-align: center;
+  }
   }
 `
 

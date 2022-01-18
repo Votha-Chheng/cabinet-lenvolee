@@ -19,7 +19,7 @@ const Footer = () => {
                   <Image className="svg-img" src="/images/clock.svg" width={30} height={30} layout="fixed" />
                 </div>
                 <span className="texte">
-                  Lundi - Mardi - Jeudi - Vendredi<br/>de 9h00 à 16h00
+                Du Lundi au Vendredi<br/>de 9h00 à 19h00
                 </span>
               </div>
               <div className="flex-item">
@@ -27,8 +27,8 @@ const Footer = () => {
                   <Image src="/images/phone-mail.svg" width={30} height={30} layout="fixed"/>
                 </div>
                 <span className="texte">
-                  <a className="tel" href="tel:0624861010">06 24 86 10 10</a><br/>
-                  <a href="mailto:votha_chheng@gmx.fr">votha_chheng@gmx.fr</a>           
+                  <a className="tel" href="tel:0467756811">04 67 75 68 11</a><br/>
+                  <a href="mailto:cabinetdentaire.lenvolee@gmail.com">cabinetdentaire.lenvolee@gmail.com</a>           
                 </span>
               </div>
               <div className="flex-item">
@@ -212,9 +212,20 @@ const FooterWrapper = styled.footer`
         height: 100%;
       }
     }
-
     .location-flex{
       display: none;
+    }
+  }
+  @media (max-width:620px){
+    .footer-up{
+      .logo-flex{
+        .sub-logo-flex{
+          column-gap: 10px;
+          .mentions{
+            padding-left: 5px;
+          }
+        }
+      }
     }
   }
   @media (max-width:560px){

@@ -10,6 +10,7 @@ const Hero = ({img, title}) => {
   const [posXRight, setPosXRight] = useState(0)
   const [h2Height, setH2Height] = useState(0)
   const [h2Width, setH2Width] = useState(0)
+  const [bgColor, setBgColor] = useState("#363c51")
 
   const pageTitleRef = useRef()
 
@@ -37,6 +38,12 @@ const Hero = ({img, title}) => {
     }
   }, [h2Width])
 
+  useEffect(() => {
+    setTimeout(() => {
+      setBgColor("whitesmoke")
+    }, 1500)
+  }, [])
+
   const halfLine = {
     initial: {
       height: 0
@@ -45,7 +52,7 @@ const Hero = ({img, title}) => {
       height: h2Height/2,
       transition: {
         duration:0.15, 
-        delay:0.8,
+        delay:0.35,
         ease:"linear"
       }
     }
@@ -58,7 +65,7 @@ const Hero = ({img, title}) => {
       height: h2Height/2,
       transition: {
         duration:0.15, 
-        delay:1.3,
+        delay:0.8,
         ease:"linear"
       }
     }
@@ -71,7 +78,7 @@ const Hero = ({img, title}) => {
       width: h2Width,
       transition: {
         duration:0.3,
-        delay:1,
+        delay:0.5,
         ease:"linear"
       }
     }
@@ -93,9 +100,7 @@ const Hero = ({img, title}) => {
         <motion.h2 
           ref={pageTitleRef} 
           className="page-title"
-          initial={{backgroundColor:"var(--main-bgcolor)"}}
-          animate={{backgroundColor:"whitesmoke"}}
-          transition={{delay:1.5, ease:"easeOut"}}
+          style={{backgroundColor:`${bgColor}`}}
         >
           <motion.div 
             className="line-half top"
@@ -158,7 +163,7 @@ const Hero = ({img, title}) => {
           className="line left"
           initial={{x:"-100%"}}
           animate={{x:0}}
-          transition={{duration:0.35, delay:0.5, ease:"linear"}}
+          transition={{duration:0.35, ease:"linear"}}
         >
           <LineThrough width={`${posXLeft+2.5}px`} height="5px" backgroundColor="var(--main-color-text)"/>
         </motion.div>
@@ -166,7 +171,7 @@ const Hero = ({img, title}) => {
           className="line right"
           initial={{width:0}}
           animate={{width:posXRight}}
-          transition={{duration:0.35, delay:1.5, ease:"linear"}}
+          transition={{duration:0.35, delay:1, ease:"linear"}}
           style={{left:`${posXRight}px`}}
         >
           <LineThrough width="100%" height="5px" backgroundColor="var(--main-color-text)"/>
@@ -181,6 +186,9 @@ const HeroWrapper = styled.div`
   height: 300px;
   width: 100%;
 
+  h2{
+    text-transform: capitalize; 
+  }
   .hero{
     filter: blur(2px) contrast(125%);
     width: 100%;
@@ -199,6 +207,8 @@ const HeroWrapper = styled.div`
       background-color: transparent;
       transition: background-color 1s ease-out;
       border: none;
+
+      
     }
     .line-half{
       position: absolute;
@@ -218,8 +228,6 @@ const HeroWrapper = styled.div`
         right:-2.5px;
         bottom:0;
         left:auto;
-        /* transform : rotateZ(180deg);
-        transform-origin: center top; */
       }
       &.right-top{
         right:-2.5px;

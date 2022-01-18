@@ -4,7 +4,7 @@ import { useTriggerInview } from "context/BgColorContext";
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
-const ButtonCall = () => {
+const ButtonCall = ({text}) => {
 
   const [mediaQuery, setMediaQuery] = useState(0)
 
@@ -60,7 +60,6 @@ const ButtonCall = () => {
           duration:0.25,
           delay:1.2
         },
-        
         duration: 1.2,
         ease: "linear"
       } 
@@ -85,10 +84,14 @@ const ButtonCall = () => {
             <Image src="/images/phone-blue.svg" width={30} height={30} layout="fixed" />
           </div>  
         </div>
-        <span>Prenons RDV</span>    
+        <span>{text}</span>    
       </motion.a>
     </ButtonWrap>
   );
+}
+
+ButtonCall.defaultProps = {
+  text: "Penons RDV"
 }
 
 const ButtonWrap = styled.div`
@@ -278,7 +281,7 @@ const ButtonWrap = styled.div`
       }
     }
   }
-
 `
+
 
 export default ButtonCall;

@@ -359,7 +359,6 @@ const MainWrapper = styled.main`
         height: 50%;
         position: absolute;
         top:50%;
-        //background-color: var(--main-bgcolor);
         opacity: 0;
       }
 

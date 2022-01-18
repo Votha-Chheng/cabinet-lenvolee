@@ -64,7 +64,72 @@ h2{
   padding:10px 20px;
   background-color:whitesmoke ;
   border: 5px solid var(--main-color-text);
-}    
+}  
+
+section{
+  margin-bottom: 120px;
+  font-family: var(--font-family-text);
+  color: #525252;
+  font-size: 1.25rem;
+  letter-spacing: 1.75px;
+  text-align: justify;
+  line-height: 2.25rem;
+  font-weight: bold;
+  position: relative;
+
+}
+
+section ul{
+  list-style-type: none;
+  width: 100%;
+  padding: 0 50px;
+}
+
+section ul li{
+  display: flex;
+  column-gap:10px;
+  margin: 20px 0;
+}
+
+section p{
+  text-indent: 30px;
+  padding:0 5%;
+}
+
+.h3-title{
+  position: relative;
+  letter-spacing: 1.75px;
+}
+
+.h3-title:before{
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 100%;
+  top:0;
+  left:-50px;
+  background: var(--main-color-text);
+}
+.h3-title:after{
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 100%;
+  clip-path: polygon(100% 75%, 0% 100%, 100% 100%);
+  top:-100%;
+  left:-50px;
+  background: #7b5428;
+}
+
+.h3-title h3{
+  background-color: var(--main-color-text);
+  padding: 20px 25px;
+  font-family: var(--serif-font);
+  font-size:1.75rem;
+  color: var(--main-bgcolor);
+  font-weight: bolder;
+  text-transform: uppercase;
+}
   
 @media (max-width : 1500px) {
   .menuInfo{
