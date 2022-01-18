@@ -66,7 +66,7 @@ const SoinsPage = () => {
           </ul>
           <div className="img-xray">
             <ImageModal 
-              img="soins-hero" 
+              img="rayon" 
               border={true}
               getImgId={getImgId} 
               height={mediaQuery<700 ? "400px" : "600px"} 
