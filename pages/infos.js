@@ -1,8 +1,56 @@
 import Hero from "@/components/hero";
 import MainContainer from "@/components/maincontainer";
+import { motion } from "framer-motion";
+import { useState } from "react";
+import {InView} from "react-intersection-observer";
 import styled from "styled-components";
 
 const InfosPratiques = () => {
+  const [sectionInView, setSectionInView] = useState(false)
+  const [sectionTwoInView, setSectionTwoInView] = useState(false)
+
+  const titleFadeIn = {
+    initial : {
+      opacity: 0,
+      x:75
+    },
+    animate:{
+      opacity: 1,
+      x:0,
+      transition : {
+        duration: 0.5,
+        ease:"easeOut"
+      }
+    }
+  }
+
+  const parentList = {
+    initial : {
+
+    },
+    animate : {
+      transition: {
+        delayChildren : 0.25,
+        staggerChildren : 0.2
+      }
+    }
+  }
+
+  const childList = {
+    initial : {
+      x:75,
+      opacity: 0
+    },
+    animate : {
+      x:0,
+      opacity: 1,
+      transition: {
+        duration : 0.25,
+        ease:"easeOut"
+      }
+    }
+  }
+
   return (
     <MainWrapper>
       <Hero img="infos-hero.jpg" title="Infos pratiques"/>
@@ -89,46 +137,81 @@ const InfosPratiques = () => {
         </section>
         <div className="h3-title">
           <h3>
-            Premier rendez-vous
+            <motion.div
+              variants={titleFadeIn}
+              initial="initial"
+              animate={ sectionInView ? "animate" : ""}
+            >
+              Premier rendez-vous
+            </motion.div>
           </h3>
         </div>
         <section>
-          <p>
+          <motion.p
+            initial={{opacity : 0}}
+            animate={ sectionInView ? {opacity:1} : ""}
+            transition={{delay: 0.5, duration:0.25, ease:"easeOut"}}
+          >
             Lors de votre premier rendez-vous, un questionnaire médical à remplir vous sera donné. Les renseignements demandés serviront à adapter ou ajuster votre parcours de soins.
-          </p>
+          </motion.p>
+          <InView 
+            onChange={(inView, entry)=> inView && setSectionInView(true)} 
+            style={{position:"absolute", top:"100px"}} 
+          />
         </section>
         <div className="h3-title">
           <h3>
-            Accès au cabinet dentaire
+            <motion.div
+              variants={titleFadeIn}
+              initial="initial"
+              animate={ sectionTwoInView ? "animate" : ""}
+            >
+              Accès au cabinet dentaire
+            </motion.div>
           </h3>
         </div>
         <section>
-          <ul>
-            <li>
+          <InView 
+            onChange={(inView, entry)=> inView && setSectionTwoInView(true)} 
+            style={{position:"absolute", top:"120px"}} 
+          />
+          <motion.ul
+            variants={parentList}
+            initial="initial"
+            animate={sectionTwoInView ? "animate" : ""}
+          >
+            <motion.li
+              variants={childList}
+            >
               <div>
                 <i className="fa-solid fa-right-long"/>
               </div>
               <div>
                 Par le tramway, arrêt Charles de Gaulle ligne 2.
               </div>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li
+              variants={childList}
+            >
               <div>
                 <i className="fa-solid fa-right-long"/>
               </div>
               <div>
                 En voiture, parking TAM Charles de gaulle (payant) puis sortir tram Charles de gaulle.
-              </div>  
-            </li>
-            <li>
+              </div> 
+            </motion.li>
+
+            <motion.li
+              variants={childList}
+            >
               <div>
                 <i className="fa-solid fa-right-long"/>
               </div>
               <div>
                 Le cabinet est situé dans la résidence du Prado concorde bâtiment l’Envolée, entrée par le portail puis 1ere à droite.
               </div>
-            </li>
-          </ul>
+            </motion.li> 
+          </motion.ul>
         </section> 
       </MainContainer>
       

@@ -100,7 +100,6 @@ const Footer = () => {
                     </li>
                   </ul>
                 </em>
-                
               </div>
             </div>  
           </div>  
@@ -181,7 +180,6 @@ const FooterWrapper = styled.footer`
           }
         }
       }
-
     }
     .location-flex{
       width: 550px;
@@ -195,9 +193,7 @@ const FooterWrapper = styled.footer`
         height: 100%;
         border: none;
       }
-    }
-    
-    
+    } 
   }
 
   .footer-down{  
