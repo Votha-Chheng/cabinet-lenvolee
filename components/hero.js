@@ -93,7 +93,7 @@ const Hero = ({img, title}) => {
           animate={{opacity:1, scale:1}}
           transition={{duration:1.2, delay:1.85, ease:"easeOut"}}
         >
-          <Image src={`/images/${img}`} layout="fill" objectFit="cover" priority /> 
+          <Image src={`/images/${img}`} layout="fill" objectFit="cover" /> 
         </motion.div>           
       </div>
       <div className="layer">

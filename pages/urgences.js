@@ -148,7 +148,7 @@ const UrgencesPage = () => {
                 <i className="fa-solid fa-right-long"/>
               </div>
               <div>
-                Prenez immédiatement con&shy;tact avec no&shy;tre équipe.
+                Prenez con&shy;tact im&shy;mé&shy;diate&shy;ment avec no&shy;tre équi&shy;pe.
               </div>
             </motion.li>
             <motion.li
@@ -205,6 +205,10 @@ const MainWrapper = styled.main`
   }
   .iframe{
     text-align: center;
+  }
+
+  @media (max-width:768px){
+    margin-top: 75px;
   }
 
 `

@@ -154,6 +154,10 @@ const FooterWrapper = styled.footer`
         column-gap: 50px;
         border-top: 1.75px solid var(--main-color-text);
 
+        a:hover{
+          color: orange;
+        }
+
         .mentions{    
           padding: 10px 0 10px 20px;
           display: flex;

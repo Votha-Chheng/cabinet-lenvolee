@@ -5,8 +5,8 @@ const ScrollingMenu = ({setSideMenu}) => {
   return (
     <UlWrapper>
       <li onClick={() => setSideMenu(false)}>
-        <Link href="/soins">
-          <a>Nos soins</a>
+        <Link href="/ethique">
+          <a>Notre éthique</a>
         </Link>
       </li>
       <li onClick={() => setSideMenu(false)}>

@@ -3,6 +3,7 @@ import MainContainer from "@/components/maincontainer";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import {InView} from "react-intersection-observer";
+import Image from 'next/image'
 import styled from "styled-components";
 
 const InfosPratiques = () => {
@@ -68,7 +69,7 @@ const InfosPratiques = () => {
                 <i className="fa-solid fa-right-long"/>
               </div>
               <div>
-                Venez non accompagné, dans la mesure du possible.
+                Venez non accompagné, dans la mesure du possi&shy;ble.
               </div>
             </li>
             <li>
@@ -84,7 +85,7 @@ const InfosPratiques = () => {
                 <i className="fa-solid fa-right-long"/>
               </div>
               <div>
-                Portez votre masque pour venir au cabinet.
+                Le port du masque est obli&shy;ga&shy;toire à l'inté&shy;rieur du cabi&shy;net.
               </div> 
             </li>
             <li>
@@ -92,7 +93,7 @@ const InfosPratiques = () => {
                 <i className="fa-solid fa-right-long"/>
               </div>
               <div>
-                Réduisez vos effets personnels au minimum dans la mesure du possible.
+                Réduisez vos effets per&shy;son&shy;nels au mini&shy;mum dans la mesure du possible (tels que les bijoux et autres acces&shy;soires de mode).
               </div>
             </li>
             <li>
@@ -100,7 +101,7 @@ const InfosPratiques = () => {
                 <i className="fa-solid fa-right-long"/>
               </div>
               <div>
-                Privilégiez les paiements par carte bancaire.
+                Privilégiez les paiements par carte ban&shy;caire.
               </div>
             </li>
           </ul>
@@ -114,7 +115,7 @@ const InfosPratiques = () => {
                 <i className="fa-solid fa-right-long"/>
               </div>
               <div>
-                Respectez les distances sociales.
+                Respectez les distances so&shy;ciales.
               </div>
             </li>
             <li>
@@ -130,7 +131,7 @@ const InfosPratiques = () => {
                 <i className="fa-solid fa-right-long"/>
               </div>
               <div>
-                Lavez vos mains avec la solution hydro-alcoolique fournie à l’accueil.
+                Lavez vos mains avec la so&shy;lution hydro-alcoolique four&shy;nie à l’ac&shy;cueil.
               </div>
             </li>
           </ul>
@@ -152,7 +153,7 @@ const InfosPratiques = () => {
             animate={ sectionInView ? {opacity:1} : ""}
             transition={{delay: 0.5, duration:0.25, ease:"easeOut"}}
           >
-            Lors de votre premier rendez-vous, un questionnaire médical à remplir vous sera donné. Les renseignements demandés serviront à adapter ou ajuster votre parcours de soins.
+            Lors de votre premier rendez-vous, un ques&shy;tionnaire médical à remplir vous sera donné. Les ren&shy;seignements deman&shy;dés ser&shy;viront à adapter ou ajuster votre parcours de soins.
           </motion.p>
           <InView 
             onChange={(inView, entry)=> inView && setSectionInView(true)} 
@@ -176,10 +177,20 @@ const InfosPratiques = () => {
             style={{position:"absolute", top:"120px"}} 
           />
           <motion.ul
+            initial={{opacity:0, y :50}}
+            animate={sectionTwoInView ? {opacity:1, y :0} : ""}
+            transition={{duration:0.5}}
+          >
+            Le cabinet se situe dans la résidence L'Envolée. L'entrée de la résidence se trouve à moins de 10 mètres en face de l'arrêt de tramway Charles de Gaulle. Empruntez le portail de droite (inutile de sonner), puis prenez la première à droite.
+          </motion.ul>
+          <motion.ul
             variants={parentList}
             initial="initial"
             animate={sectionTwoInView ? "animate" : ""}
           >
+            <motion.div className="first-div" variants={childList}>
+              Transports en commun :
+            </motion.div>
             <motion.li
               variants={childList}
             >
@@ -190,6 +201,9 @@ const InfosPratiques = () => {
                 Par le tramway, arrêt Charles de Gaulle ligne 2.
               </div>
             </motion.li>
+            <motion.div className="first-div" variants={childList}>
+              En voiture :
+            </motion.div>
             <motion.li
               variants={childList}
             >
@@ -197,20 +211,43 @@ const InfosPratiques = () => {
                 <i className="fa-solid fa-right-long"/>
               </div>
               <div>
-                En voiture, parking TAM Charles de gaulle (payant) puis sortir tram Charles de gaulle.
+                Parking TAM Charles de Gaulle (gratuit 2h) puis marcher en direction de l'arrêt de tram Charles de gaulle.
               </div> 
             </motion.li>
-
-            <motion.li
+            <motion.div 
+              className="iframe-map"
               variants={childList}
             >
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d880.8677997203906!2d3.8972128292533563!3d43.628027969432935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdb79ae6e7ca5afbe!2zNDPCsDM3JzQwLjkiTiAzwrA1Myc1MS45IkU!5e1!3m2!1sfr!2sfr!4v1642635452320!5m2!1sfr!2sfr" 
+                width="400" 
+                height="300" 
+                allowFullScreen="" 
+                loading="lazy"
+                style={{border:"3px solid var(--main-color-text"}}
+              />
+            </motion.div>
+            <motion.li variants={childList}>
               <div>
                 <i className="fa-solid fa-right-long"/>
               </div>
               <div>
-                Le cabinet est situé dans la résidence du Prado concorde bâtiment l’Envolée, entrée par le portail puis 1ere à droite.
+                Un parking souterrain payant (CAP CONCORDE) est situé dans la résidence du Prado, au niveau de l'enseigne Krys, <em>rue du Prado</em>.
               </div>
             </motion.li> 
+            <motion.div
+              className="iframe-map"
+              variants={childList}
+            >
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d855.77866373503!2d3.8968055861691653!3d43.62890911296943!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6af4357c22289%3A0x14583ec9a36522c6!2sOpticien%20Krys%20Castelnau-le-Lez%20-%20Jean%20Jaur%C3%A8s!5e1!3m2!1sfr!2sfr!4v1642636290379!5m2!1sfr!2sfr" 
+                width="400" 
+                height="300" 
+                allowFullScreen="" 
+                loading="lazy"
+                style={{border:"3px solid var(--main-color-text"}}
+              />
+            </motion.div>
           </motion.ul>
         </section> 
       </MainContainer>
@@ -226,6 +263,33 @@ const MainWrapper = styled.main`
     color:black; 
     text-decoration:underline; 
     text-underline-offset:2.5px;
+    margin-left: -10px;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+
+  li{
+    margin: 0 0 25px;
+  }
+
+  .iframe-map{
+    width:400px;
+    height:300px; 
+    margin:0 auto 50px;
+  }
+
+  @media (max-width:768px){
+    margin-top: 100px;
+  }
+  @media (max-width:490px){
+    .iframe-map{
+      margin-left:calc((100px - 100%)/9);
+    }
+  }
+  @media (max-width:440px){
+    .iframe-map{
+      margin-left:-60px;
+    }
   }
 `
 
