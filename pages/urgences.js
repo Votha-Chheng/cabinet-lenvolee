@@ -55,9 +55,8 @@ const UrgencesPage = () => {
             Vous pouvez également appeler ou vous rendre au service des Urgences du CHU de Montpellier au <a href="https://www.chu-montpellier.fr/fr/a-propos-du-chu/decouvrir/etablissements/gui-de-chauliac" target="_blank" rel="noopener noreferrer">Service de Chirurgie Maxillo-Faciale/Sto&shy;matolo&shy;gie - Hôpital Gui de Chau&shy;liac</a>.
           </p>
           <div className="iframe">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11551.667709015814!2d3.859863130909612!3d43.62908793736093!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6e2e282718d7d408!2sChirurgie%20maxillo-faciale%20CHU%20Montpellier!5e0!3m2!1sfr!2sfr!4v1642327613410!5m2!1sfr!2sfr" width="360" height="360" style={{border:"0"}} allowFullScreen="" loading="lazy"/>
-          </div>
-          
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11551.667709015814!2d3.859863130909612!3d43.62908793736093!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6e2e282718d7d408!2sChirurgie%20maxillo-faciale%20CHU%20Montpellier!5e0!3m2!1sfr!2sfr!4v1642327613410!5m2!1sfr!2sfr" width="360" height="360" allowFullScreen="" loading="lazy"/>
+          </div>  
         </section>
         <div className="h3-title">
           <h3>
@@ -88,11 +87,11 @@ const UrgencesPage = () => {
                 <i className="fa-solid fa-right-long"/>
               </div>
               <div>
-                Munissez-vous d&apos;une com&shy;pres&shy;se sté&shy;rile (ou à défaut d’un tissu propre). Placez-la entre le point de saigne&shy;ment et l&apos;arcade op&shy;po&shy;sée, puis serrez fort pen&shy;dant une di&shy;zaine de minutes.
+                Munissez-vous d&apos;une com&shy;pres&shy;se sté&shy;rile (ou à défaut d&apos;un tissu propre). Placez-la entre le point de saigne&shy;ment et l&apos;arcade op&shy;po&shy;sée, puis serrez fort pen&shy;dant une di&shy;zaine de minutes.
               </div>
             </motion.li>
             <div className="img-saignement">
-              Image illustrant la manière de poser la compresse sur l'arcade pour stopper le saignement.
+              Image illustrant la manière de poser la compresse sur l&apos;arcade pour stopper le saignement.
             </div>
             <motion.li
               variants={childList}
@@ -160,7 +159,7 @@ const UrgencesPage = () => {
                 <i className="fa-solid fa-right-long"/>
               </div>
               <div>
-                <em>S’il y a expulsion d’une dent dé&shy;finitive :</em> le geste d’ur&shy;gen&shy;ce con&shy;siste à récupérer la dent, sans la net&shy;toyer, et à la con&shy;ser&shy;ver dans du <em>sérum phy&shy;siologique ou du lait (si&shy;non la conserver dans sa propre sa&shy;li&shy;ve)</em>. La ré&shy;im&shy;plan&shy;tation, si elle est pos&shy;si&shy;ble, devra se faire aussi rapi&shy;dement que possible.
+                <em>S&apos;il y a expulsion d&apos;une dent dé&shy;finitive :</em> le geste d&apos;ur&shy;gen&shy;ce con&shy;siste à récupérer la dent, sans la net&shy;toyer, et à la con&shy;ser&shy;ver dans du <em>sérum phy&shy;siologique ou du lait (si&shy;non la conserver dans sa propre sa&shy;li&shy;ve)</em>. La ré&shy;im&shy;plan&shy;tation, si elle est pos&shy;si&shy;ble, devra se faire aussi rapi&shy;dement que possible.
               </div>
             </motion.li>
             <motion.li
@@ -170,7 +169,7 @@ const UrgencesPage = () => {
                 <i className="fa-solid fa-right-long"/>
               </div>
               <div>
-                S’il y a déplacement des dents défi&shy;nitives : le geste d’ur&shy;gence consiste, à chaud, à les repla&shy;cer cor&shy;rec&shy;tement avec la pres&shy;sion des doigts.
+                S&apos;il y a déplacement des dents défi&shy;nitives : le geste d&apos;ur&shy;gence consiste, à chaud, à les repla&shy;cer cor&shy;rec&shy;tement avec la pres&shy;sion des doigts.
               </div>
             </motion.li>
           </motion.ul>

@@ -33,7 +33,7 @@ const MenuItems = ({bandeauInView}) => {
           <ul className="menu-items" style={{transform:`translateX(-${ !bandeauInView ? 0 : firstMenuItemX}px)`}}>
             <li className="logo-item" ref={logoMini}>
               <Link href="/">
-                <a><img src="/images/logo.svg" width="125" /></a>
+                <a><img src="/images/logo.svg" width="125" alt="logo de l'Envolée cabinet dentaire à Castelnau-le Lez, Dr Sylvie Ma-Francin"/></a>
               </Link>
             </li> 
             <li className="item" ref={firstMenuItem}>

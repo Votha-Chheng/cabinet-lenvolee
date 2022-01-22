@@ -26,8 +26,8 @@ const BandeauInfo = () => {
           transition={{duration:1, delay:0.5, ease:"easeOut"}}
         >
           <div className="images">
-            <img src="/images/burger-menu.svg" width="35" style={{opacity : `${!sideMenu  ? 1 : 0}`}} />
-            <img src="/images/close.svg" width="20" style={{opacity : `${!sideMenu  ? 0 : 1 }`}}  />
+            <img src="/images/burger-menu.svg" width="35" style={{opacity : `${!sideMenu  ? 1 : 0}`}} alt="menu burger" />
+            <img src="/images/close.svg" width="20" style={{opacity : `${!sideMenu  ? 0 : 1 }`}}  alt="fermer menu" />
           </div>
           
         </motion.div>
@@ -41,7 +41,7 @@ const BandeauInfo = () => {
             <ScrollingMenu setSideMenu={setSideMenu}/>
           </nav>
           <div className="info">
-            <Image className="svg-img" src="/images/clock.svg" width={40} height={40} layout="fixed" />
+            <Image className="svg-img" src="/images/clock.svg" width={40} height={40} layout="fixed" alt="Horaires du cabinet l'Envolée" />
             <div className="texteInfo">
               <div><em>Du Lundi au Vendredi</em></div>
               <div style={{textAlign:"center"}}><em>9h00 à 19h00</em></div> 
@@ -49,7 +49,7 @@ const BandeauInfo = () => {
           </div>
 
           <div className="info phone-mail">
-            <Image src="/images/phone-mail.svg" width={40} height={40} layout="fixed"/>
+            <Image src="/images/phone-mail.svg" width={40} height={40} layout="fixed" alt="Contact et e-mail du cabinet l'Envolée"/>
             <div className="texteInfo">  
               <div><em><a href="tel:0467756811">04 67 75 68 11</a></em></div>
               <div>
@@ -59,7 +59,7 @@ const BandeauInfo = () => {
             </div>
           </div>
           <div className="info local">
-            <Image src="/images/location.svg" width={40} height={40} layout="fixed"/>
+            <Image src="/images/location.svg" width={40} height={40} layout="fixed" alt="Localisation du cabinet l'Envolée"/>
             <div className="texteInfo">
               <a href="https://www.google.fr/maps/place/L'envol%C3%A9e+Cabinet+dentaire/@43.6284937,3.895878,17z/data=!4m5!3m4!1s0x12b6af1eb59a905f:0x81b577b1ccc1138e!8m2!3d43.6283792!4d3.8969015" target="_blank" rel="noreferrer">
                 Résidence L&apos;Envolée, 3 place Charles de Gaulle<br/>

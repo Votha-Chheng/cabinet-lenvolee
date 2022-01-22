@@ -85,7 +85,7 @@ const InfosPratiques = () => {
                 <i className="fa-solid fa-right-long"/>
               </div>
               <div>
-                Le port du masque est obli&shy;ga&shy;toire à l'inté&shy;rieur du cabi&shy;net.
+                Le port du masque est obli&shy;ga&shy;toire à l&apos;inté&shy;rieur du cabi&shy;net.
               </div> 
             </li>
             <li>
@@ -181,7 +181,7 @@ const InfosPratiques = () => {
             animate={sectionTwoInView ? {opacity:1, y :0} : ""}
             transition={{duration:0.5}}
           >
-            Le cabinet se situe dans la résidence L'Envolée. L'entrée de la résidence se trouve à moins de 10 mètres en face de l'arrêt de tramway Charles de Gaulle. Empruntez le portail de droite (inutile de sonner), puis prenez la première à droite.
+            Le cabinet se situe dans la résidence L&apos;Envolée. L&apos;entrée de la résidence se trouve à moins de 10 mètres en face de l&apos;arrêt de tramway Charles de Gaulle. Empruntez le portail de droite (inutile de sonner), puis prenez la première à droite.
           </motion.ul>
           <motion.ul
             variants={parentList}
@@ -211,7 +211,7 @@ const InfosPratiques = () => {
                 <i className="fa-solid fa-right-long"/>
               </div>
               <div>
-                Parking TAM Charles de Gaulle (gratuit 2h) puis marcher en direction de l'arrêt de tram Charles de gaulle.
+                Parking TAM Charles de Gaulle (gratuit 2h) puis marcher en direction de l&apos;arrêt de tram Charles de gaulle.
               </div> 
             </motion.li>
             <motion.div 
@@ -232,7 +232,7 @@ const InfosPratiques = () => {
                 <i className="fa-solid fa-right-long"/>
               </div>
               <div>
-                Un parking souterrain payant (CAP CONCORDE) est situé dans la résidence du Prado, au niveau de l'enseigne Krys, <em>rue du Prado</em>.
+                Un parking souterrain payant (CAP CONCORDE) est situé dans la résidence du Prado, au niveau de l&apos;enseigne Krys, <em>rue du Prado</em>.
               </div>
             </motion.li> 
             <motion.div

@@ -71,7 +71,7 @@ const CarouselResponsive = ({isInView}) => {
       </motion.div>
       <InView as="div" className="inview-line-second" onChange={(inView, entry)=>setBottomInView(inView)} />
       <Modal show={show}>
-        <Image src={`/images/${imgModal}.jpg`} layout="fill" objectFit="contain"/>
+        <Image src={`/images/${imgModal}.jpg`} layout="fill" objectFit="contain" alt={imgModal}/>
       </Modal>
     </CarouselWrapper>
   );

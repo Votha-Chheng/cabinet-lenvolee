@@ -13,6 +13,7 @@ const ImageModal = ({img, getImgId, height, width, border}) => {
         blurDataURL={`/images/${img}-tampon.jpg`} 
         id={img} 
         onClick={getImgId}
+        alt={img}
       />
     </PicWrapper>
   );

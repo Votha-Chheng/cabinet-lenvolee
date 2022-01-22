@@ -78,10 +78,10 @@ const ButtonCall = ({text}) => {
         <div className="vertical last" />
         <div className="phone">
           <div className="phone-black" >
-            <Image src="/images/phone.svg" width={30} height={30} layout="fixed"/>
+            <Image src="/images/phone.svg" width={30} height={30} layout="fixed" alt="icone téléphone"/>
           </div>
           <div className="phone-blue">
-            <Image src="/images/phone-blue.svg" width={30} height={30} layout="fixed" />
+            <Image src="/images/phone-blue.svg" width={30} height={30} layout="fixed" alt="icone téléphone"/>
           </div>  
         </div>
         <span>{text}</span>    

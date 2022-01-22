@@ -139,7 +139,7 @@ const SoinsPage = () => {
         
       </MainContainer>
       <Modal show={show}>
-        <Image src={`/images/${imgModal}.jpg`} layout="fill" objectFit="contain"/>
+        <Image src={`/images/${imgModal}.jpg`} layout="fill" objectFit="contain" alt={imgModal}/>
       </Modal>
     </MainWrapper>
   );

@@ -61,7 +61,7 @@ const HygienePage = () => {
       </div>
       <section>
         <p>
-          Pour assurer la pérennité de nos traitements il est essentiel d’enseigner les bons gestes d’hygiène bucco-dentaire que vous pourrez réaliser chez vous. Au cabinet une salle est dédiée à l’en&shy;seignement des techniques d’hy&shy;giène bucco-dentaire et des conseils sur le matériel vous sera fourni. Ces techni&shy;ques sont essentielles à maîtri&shy;ser lors d’atteinte du système d’at&shy;tache de la dent appelée <em>maladie parodontale</em>.
+          Pour assurer la pérennité de nos traitements il est essentiel d&apos;enseigner les bons gestes d&apos;hygiène bucco-dentaire que vous pourrez réaliser chez vous. Au cabinet une salle est dédiée à l&apos;en&shy;seignement des techniques d&apos;hy&shy;giène bucco-dentaire et des conseils sur le matériel vous sera fourni. Ces techni&shy;ques sont essentielles à maîtri&shy;ser lors d&apos;atteinte du système d&apos;at&shy;tache de la dent appelée <em>maladie parodontale</em>.
         </p>
         <div className="img-coin">
           Image coin hygiène
@@ -93,8 +93,8 @@ const HygienePage = () => {
                 <i className="fa-solid fa-right-long"/>
               </div>
               <div>
-                Pour les enfants et les jeunes de 3 à 24 ans, pensez au programme "M'T DENTS" : c'est un examen bucco-dentaire complet gratuit (vous n'avez pas à avancez de frais) disponible tous les 3 ans.<br/>
-                <span className="important">Lors de votre prise de rendez-vous, veuillez indiquer ce motif. Munissez-vous du formulaire "M'T DENTS" disponible votre compte Ameli. Pour plus de détails, rendez-vous sur le site <a href="https://www.ameli.fr/assure/sante/themes/carie-dentaire/mt-dents" target="_blank" rel="noopener noreferrer">ameli.fr</a>.</span>
+                Pour les enfants et les jeunes de 3 à 24 ans, pensez au programme &ldquo;M&apos;T DENTS&rdquo; : c&apos;est un examen bucco-dentaire complet gratuit (vous n&apos;avez pas à avancez de frais) disponible tous les 3 ans.<br/>
+                <span className="important">Lors de votre prise de rendez-vous, veuillez indiquer ce motif. Munissez-vous du formulaire &ldquo;M&apos;T DENTS&rdquo; disponible votre compte Ameli. Pour plus de détails, rendez-vous sur le site <a href="https://www.ameli.fr/assure/sante/themes/carie-dentaire/mt-dents" target="_blank" rel="noopener noreferrer">ameli.fr</a>.</span>
               </div>
             </motion.li>
             <motion.li variants={childList}>
@@ -110,8 +110,8 @@ const HygienePage = () => {
                 <i className="fa-solid fa-right-long"/>
               </div>
               <div>
-                Complétez votre brossage le pas&shy;sage du fil dentaire afin d'éliminer la plaque dentaire rési&shy;duelle dans les espaces inter&shy;dentaires. Cepen&shy;dant, le fil dentaire doit être manipulé avec prudence de manière à ne pas léser les gencives.<br/>
-                Si les espaces interdentaires sont larges, ou alors en cas de problèmes de gencives ou bien lors d'un traitement d'orthodontie, l'utili&shy;sa&shy;tion de brossettes interdentaires est préconisée.
+                Complétez votre brossage le pas&shy;sage du fil dentaire afin d&apos;éliminer la plaque dentaire rési&shy;duelle dans les espaces inter&shy;dentaires. Cepen&shy;dant, le fil dentaire doit être manipulé avec prudence de manière à ne pas léser les gencives.<br/>
+                Si les espaces interdentaires sont larges, ou alors en cas de problèmes de gencives ou bien lors d&apos;un traitement d&apos;orthodontie, l&apos;utili&shy;sa&shy;tion de brossettes interdentaires est préconisée.
               </div>
             </motion.li>
             <motion.div className="illustration" variants={childList}>
@@ -125,7 +125,7 @@ const HygienePage = () => {
                 <i className="fa-solid fa-right-long"/>
               </div>
               <div>
-                Ne laissez pas le tartre s'accumuler sur vos dents. Un détartrage chez le dentiste est conseillé tous les 2 ans. Il est impossible d'enlever le tartre avec une brosse à dent.
+                Ne laissez pas le tartre s&apos;accumuler sur vos dents. Un détartrage chez le dentiste est conseillé tous les 2 ans. Il est impossible d&apos;enlever le tartre avec une brosse à dent.
               </div>
             </motion.li>
           </motion.ul>

@@ -16,7 +16,7 @@ const Footer = () => {
             <div className="mentions">
               <div className="flex-item">
                 <div className="img">
-                  <Image className="svg-img" src="/images/clock.svg" width={30} height={30} layout="fixed" />
+                  <Image className="svg-img" src="/images/clock.svg" width={30} height={30} layout="fixed" alt="Horaires du cabinet l'Envolée"/>
                 </div>
                 <span className="texte">
                 Du Lundi au Vendredi<br/>de 9h00 à 19h00
@@ -24,7 +24,7 @@ const Footer = () => {
               </div>
               <div className="flex-item">
                 <div>
-                  <Image src="/images/phone-mail.svg" width={30} height={30} layout="fixed"/>
+                  <Image src="/images/phone-mail.svg" width={30} height={30} layout="fixed" alt="Contact et e-mail du cabinet l'Envolée"/>
                 </div>
                 <span className="texte">
                   <a className="tel" href="tel:0467756811">04 67 75 68 11</a><br/>
@@ -33,7 +33,7 @@ const Footer = () => {
               </div>
               <div className="flex-item">
                 <div className="img">
-                  <Image src="/images/pmr.svg" width={30} height={30} layout="fixed"/>
+                  <Image src="/images/pmr.svg" width={30} height={30} layout="fixed" alt="Accès personnes à mobilité réduite"/>
                 </div>
                 <span className="texte">
                   Le cabinet est accessible aux personnes à mobilité réduite (PMR).
@@ -41,7 +41,7 @@ const Footer = () => {
               </div>
               <div className="flex-item">
                 <div className="img">
-                  <Image src="/images/location.svg" width={30} height={30} layout="fixed"/>
+                  <Image src="/images/location.svg" width={30} height={30} layout="fixed" alt="Accès au cabinet sur le plan"/>
                 </div>
                 <span className="texte">
                   <a href="https://www.google.fr/maps/place/L'envol%C3%A9e+Cabinet+dentaire/@43.6284937,3.895878,17z/data=!4m5!3m4!1s0x12b6af1eb59a905f:0x81b577b1ccc1138e!8m2!3d43.6283792!4d3.8969015" target="_blank" rel="noreferrer">
@@ -55,7 +55,7 @@ const Footer = () => {
             <div className="links mentions">
               <div className="flex-item">
                 <div className="img">
-                  <Image src="/images/oncd.svg" width={30} height={30} layout="fixed"/>
+                  <Image src="/images/oncd.svg" width={30} height={30} layout="fixed" alt="logo ONCD"/>
                 </div>
                 <a href="http://www.ordre-chirurgiens-dentistes.fr/" target="_blank" rel="noreferrer">
                   Site de l&apos;ONCD (<em>Ordre national des chirurgiens dentistes</em>)
@@ -63,7 +63,7 @@ const Footer = () => {
               </div>
               <div className="flex-item">
                 <div className="img">
-                  <Image src="/images/annuaire.svg" width={25} height={25} layout="fixed"/>
+                  <Image src="/images/annuaire.svg" width={25} height={25} layout="fixed" alt="annuaire chirurgiens dentistes"/>
                 </div>
                 <span  style={{marginLeft: "5px"}}>
                   <a href="http://www.ordre-chirurgiens-dentistes.fr/grand-public.html" target="_blank" rel="noreferrer">
@@ -74,7 +74,7 @@ const Footer = () => {
               </div>
               <div className="flex-item">
                 <div className="img">
-                  <Image src="/images/annuaire-doc.svg" width={30} height={30} layout="fixed"/>
+                  <Image src="/images/annuaire-doc.svg" width={30} height={30} layout="fixed" alt="annuaire médecins généralistes"/>
                 </div>
                 <a href="https://www.conseil-national.medecin.fr/annuaire" target="_blank" rel="noreferrer">
                   Trouver un médecin près de chez vous
@@ -82,13 +82,13 @@ const Footer = () => {
               </div>
               <div className="flex-item">
                 <div className="img">
-                  <Image src="/images/tram.svg" width={30} height={30} layout="fixed"/>
+                  <Image src="/images/tram.svg" width={30} height={30} layout="fixed" alt="icone tramway"/>
                 </div>
                 <span>Tram Ligne 2 - Arrêt Charles de Gaulle</span>
               </div>
               <div className="flex-item">
                 <div className="img">
-                  <Image src="/images/parking.svg" width={30} height={30} layout="fixed"/>
+                  <Image src="/images/parking.svg" width={30} height={30} layout="fixed" alt="panneau parking"/>
                 </div>
                 <em>
                   <ul style={{margin:"-5px 0 0 0", padding:"0", listStyle:"none"}}>
