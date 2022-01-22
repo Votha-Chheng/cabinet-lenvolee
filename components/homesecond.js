@@ -367,6 +367,7 @@ const DivWrapper = styled.div`
       column-gap:25px;
       margin: 0 auto;
       position: relative;
+      border:5px solid red;
 
       .line-container{
         position: absolute;

@@ -63,7 +63,7 @@ const HygienePage = () => {
         <p>
           Pour assurer la pérennité de nos traitements il est essentiel d’enseigner les bons gestes d’hygiène bucco-dentaire que vous pourrez réaliser chez vous. Au cabinet une salle est dédiée à l’en&shy;seignement des techniques d’hy&shy;giène bucco-dentaire et des conseils sur le matériel vous sera fourni. Ces techni&shy;ques sont essentielles à maîtri&shy;ser lors d’atteinte du système d’at&shy;tache de la dent appelée <em>maladie parodontale</em>.
         </p>
-        <div>
+        <div className="img-coin">
           Image coin hygiène
         </div>
       </section>
@@ -147,6 +147,17 @@ const MainWrapper = styled.main`
       text-decoration: underline;
       text-underline-offset : 2.5px;
     }
+  }
+
+  .img-coin{
+    width:500px; 
+    height:300px;
+    margin:0 auto;
+    border: 5px solid red;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .illustration{

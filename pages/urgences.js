@@ -81,7 +81,6 @@ const UrgencesPage = () => {
             initial="initial"
             animate={sectionInView ? "animate" : ""}
           >
-            <em>A illuster par une photo</em> :
             <motion.li
               variants={childList}
             >
@@ -92,6 +91,9 @@ const UrgencesPage = () => {
                 Munissez-vous d&apos;une com&shy;pres&shy;se sté&shy;rile (ou à défaut d’un tissu propre). Placez-la entre le point de saigne&shy;ment et l&apos;arcade op&shy;po&shy;sée, puis serrez fort pen&shy;dant une di&shy;zaine de minutes.
               </div>
             </motion.li>
+            <div className="img-saignement">
+              Image illustrant la manière de poser la compresse sur l'arcade pour stopper le saignement.
+            </div>
             <motion.li
               variants={childList}
             >
@@ -183,6 +185,17 @@ const MainWrapper = styled.main`
   position: relative;
   margin-bottom: 100px;
   overflow: hidden;
+
+  .img-saignement{
+    width:500px; 
+    height:300px;
+    margin:0 auto;
+    border: 5px solid red;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   h3{
     background-color: var(--main-color-text);
