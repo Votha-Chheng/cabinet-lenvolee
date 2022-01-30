@@ -21,70 +21,68 @@ const MenuItems = ({bandeauInView}) => {
   }, [])
 
   return (  
-    <NavStyle>
-      <>
-        <motion.div
-          className="menuInfo" 
-          style={{overflow:"hidden"}}
-          initial={{opacity:0}}
-          animate={{opacity:1}}
-          transition={{duration:0.25, delay:1.1, ease:"easeOut" }}
-        >
-          <ul className="menu-items" style={{transform:`translateX(-${ !bandeauInView ? 0 : firstMenuItemX}px)`}}>
-            <li className="logo-item" ref={logoMini}>
-              <Link href="/">
-                <a><img src="/images/logo.svg" width="125" alt="logo de l'Envolée cabinet dentaire à Castelnau-le Lez, Dr Sylvie Ma-Francin"/></a>
-              </Link>
-            </li> 
-            <li className="item" ref={firstMenuItem}>
-              <Link href="/ethique">
-                <a>Notre éthique</a>
-              </Link>
-              <div 
-                className={pathname === "/ethique" ? "active" : ""}
-                style={{transform: `translateX(${pathname === "/ethique" ? 0: -100}%)`}}
-              />
-            </li>
-            <li className="item">
-              <Link href="/hygiene">
-                <a>Prévention dentaire</a>
-              </Link>
-              <div 
-                className={pathname === "/hygiene" ? "active" : ""}
-                style={{transform: `translateX(${pathname === "/hygiene" ? 0: -100}%)`}}
-              />
-            </li>
-            <li className="item">
-              <Link href="/urgences">
-                <a>Urgences</a>
-              </Link>
-              <div 
-                className={pathname === "/urgences" ? "active" : ""}
-                style={{transform: `translateX(${pathname === "/urgences" ? 0: -100}%)`}}
-              />
-            </li>
-            <li className="item">
-              <Link href="/infos">
-                <a>Infos pratiques</a>
-              </Link>
-              <div 
-                className={pathname === "/infos"? "active" : ""}
-                style={{transform: `translateX(${pathname === "/infos" ? 0: -100}%)`}}
-              />
-            </li>
-          </ul>
-        </motion.div>
+    <NavStyle aria-label="navigation primaire">
+      <motion.div
+        className="menuInfo" 
+        style={{overflow:"hidden"}}
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{duration:0.25, delay:1.1, ease:"easeOut" }}
+      >
+        <ul className="menu-items" style={{transform:`translateX(-${ !bandeauInView ? 0 : firstMenuItemX}px)`}}>
+          <li className="logo-item" ref={logoMini}>
+            <Link href="/">
+              <a><img src="/images/logo.svg" width="125" alt="logo de l'Envolée cabinet dentaire à Castelnau-le Lez, Dr Sylvie Ma-Francin"/></a>
+            </Link>
+          </li> 
+          <li className="item" ref={firstMenuItem}>
+            <Link href="/ethique">
+              <a>Notre éthique</a>
+            </Link>
+            <div 
+              className={pathname === "/ethique" ? "active" : ""}
+              style={{transform: `translateX(${pathname === "/ethique" ? 0: -100}%)`}}
+            />
+          </li>
+          <li className="item">
+            <Link href="/hygiene">
+              <a>Prévention dentaire</a>
+            </Link>
+            <div 
+              className={pathname === "/hygiene" ? "active" : ""}
+              style={{transform: `translateX(${pathname === "/hygiene" ? 0: -100}%)`}}
+            />
+          </li>
+          <li className="item">
+            <Link href="/urgences">
+              <a>Urgences</a>
+            </Link>
+            <div 
+              className={pathname === "/urgences" ? "active" : ""}
+              style={{transform: `translateX(${pathname === "/urgences" ? 0: -100}%)`}}
+            />
+          </li>
+          <li className="item">
+            <Link href="/infos">
+              <a>Infos pratiques</a>
+            </Link>
+            <div 
+              className={pathname === "/infos"? "active" : ""}
+              style={{transform: `translateX(${pathname === "/infos" ? 0: -100}%)`}}
+            />
+          </li>
+        </ul>
+      </motion.div>
 
-        <motion.div 
-          className="line-bottom"
-          style={{overflow:"hidden", width:"100%"}}
-          initial={{x:"-100%"}}
-          animate={{x:0}}
-          transition={{duration:0.5, delay:0.5, ease:"easeOut" }}
-        >
-          <LineThrough backgroundColor="var(--main-color-text)"/>
-        </motion.div>  
-      </>     
+      <motion.div 
+        className="line-bottom"
+        style={{overflow:"hidden", width:"100%"}}
+        initial={{x:"-100%"}}
+        animate={{x:0}}
+        transition={{duration:0.5, delay:0.5, ease:"easeOut" }}
+      >
+        <LineThrough backgroundColor="var(--main-color-text)"/>
+      </motion.div>  
     </NavStyle>
   );
 }

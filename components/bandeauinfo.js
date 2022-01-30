@@ -37,7 +37,7 @@ const BandeauInfo = () => {
           animate={{opacity:1}}
           transition={{duration:0.25, ease: "easeOut", delay:0.9}}
         >
-          <nav className={`side-menu ${sideMenu ? "visible":""}`}>
+          <nav className={`side-menu ${sideMenu ? "visible":""}`} aria-label="navigation secondaire">
             <ScrollingMenu setSideMenu={setSideMenu}/>
           </nav>
           <div className="info">
