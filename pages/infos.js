@@ -209,7 +209,7 @@ const InfosPratiques = () => {
                 <i className="fa-solid fa-circle-play"></i>
               </div>
               <div>
-                Le Parking TAM souterrain (CAP CONCORDE) est situé dans la résidence du Prado, au niveau de l&apos;enseigne Krys, <em>rue du Prado</em>. Suivez le panneau <em>"Parking TAM"</em>.
+                Le Parking TAM souterrain (CAP CONCORDE) est situé dans la résidence du Prado, au niveau de l&apos;enseigne Krys, <em>rue du Prado</em>. Suivez le panneau <em>&quot;Parking TAM&quot;</em>.
               </div>
             </motion.li> 
             <motion.div
