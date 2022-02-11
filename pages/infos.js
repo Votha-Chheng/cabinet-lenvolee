@@ -66,7 +66,7 @@ const InfosPratiques = () => {
             <div className="first-div">Le jour de votre rendez-vous :</div>
             <li>
               <div>
-                <i className="fa-solid fa-right-long"/>
+                <i class="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 Venez non accompagné, dans la mesure du possi&shy;ble.
@@ -74,7 +74,7 @@ const InfosPratiques = () => {
             </li>
             <li>
               <div>
-                <i className="fa-solid fa-right-long"/>
+                <i class="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 Lavez-vous les mains et les dents avant de venir.
@@ -82,7 +82,7 @@ const InfosPratiques = () => {
             </li>
             <li>
               <div>
-                <i className="fa-solid fa-right-long"/>
+                <i class="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 Le port du masque est obli&shy;ga&shy;toire à l&apos;inté&shy;rieur du cabi&shy;net.
@@ -90,7 +90,7 @@ const InfosPratiques = () => {
             </li>
             <li>
               <div>
-                <i className="fa-solid fa-right-long"/>
+                <i class="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 Réduisez vos effets per&shy;son&shy;nels au mini&shy;mum dans la mesure du possible (tels que les bijoux et autres acces&shy;soires de mode).
@@ -98,7 +98,7 @@ const InfosPratiques = () => {
             </li>
             <li>
               <div>
-                <i className="fa-solid fa-right-long"/>
+                <i class="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 Privilégiez les paiements par carte ban&shy;caire.
@@ -112,7 +112,7 @@ const InfosPratiques = () => {
             </div>
             <li>
               <div>
-                <i className="fa-solid fa-right-long"/>
+                <i class="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 Respectez les distances so&shy;ciales.
@@ -120,7 +120,7 @@ const InfosPratiques = () => {
             </li>
             <li>
               <div>
-                <i className="fa-solid fa-right-long"/>
+                <i class="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 Evitez les contacts.
@@ -128,7 +128,7 @@ const InfosPratiques = () => {
             </li>
             <li>
               <div>
-                <i className="fa-solid fa-right-long"/>
+                <i class="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 Lavez vos mains avec la so&shy;lution hydro-alcoolique four&shy;nie à l’ac&shy;cueil.
@@ -195,7 +195,7 @@ const InfosPratiques = () => {
               variants={childList}
             >
               <div>
-                <i className="fa-solid fa-right-long"/>
+                <i class="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 Par le tramway, arrêt Charles de Gaulle ligne 2.
@@ -204,35 +204,12 @@ const InfosPratiques = () => {
             <motion.div className="first-div" variants={childList}>
               En voiture :
             </motion.div>
-            <motion.li
-              variants={childList}
-            >
-              <div>
-                <i className="fa-solid fa-right-long"/>
-              </div>
-              <div>
-                Parking TAM Charles de Gaulle (gratuit 2h) puis marcher en direction de l&apos;arrêt de tram Charles de gaulle.
-              </div> 
-            </motion.li>
-            <motion.div 
-              className="iframe-map"
-              variants={childList}
-            >
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d880.8677997203906!2d3.8972128292533563!3d43.628027969432935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdb79ae6e7ca5afbe!2zNDPCsDM3JzQwLjkiTiAzwrA1Myc1MS45IkU!5e1!3m2!1sfr!2sfr!4v1642635452320!5m2!1sfr!2sfr" 
-                width="400" 
-                height="300" 
-                allowFullScreen="" 
-                loading="lazy"
-                style={{border:"3px solid var(--main-color-text"}}
-              />
-            </motion.div>
             <motion.li variants={childList}>
               <div>
-                <i className="fa-solid fa-right-long"/>
+                <i class="fa-solid fa-circle-play"></i>
               </div>
               <div>
-                Un parking souterrain payant (CAP CONCORDE) est situé dans la résidence du Prado, au niveau de l&apos;enseigne Krys, <em>rue du Prado</em>.
+                Le Parking TAM souterrain (CAP CONCORDE) est situé dans la résidence du Prado, au niveau de l&apos;enseigne Krys, <em>rue du Prado</em>. Suivez le panneau <em>"Parking TAM"</em>.
               </div>
             </motion.li> 
             <motion.div
@@ -241,6 +218,29 @@ const InfosPratiques = () => {
             >
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d855.77866373503!2d3.8968055861691653!3d43.62890911296943!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6af4357c22289%3A0x14583ec9a36522c6!2sOpticien%20Krys%20Castelnau-le-Lez%20-%20Jean%20Jaur%C3%A8s!5e1!3m2!1sfr!2sfr!4v1642636290379!5m2!1sfr!2sfr" 
+                width="400" 
+                height="300" 
+                allowFullScreen="" 
+                loading="lazy"
+                style={{border:"3px solid var(--main-color-text"}}
+              />
+            </motion.div>
+            <motion.li
+              variants={childList}
+            >
+              <div>
+                <i class="fa-solid fa-circle-play"></i>
+              </div>
+              <div>
+                Parking Place Charles de Gaulle (gratuit 2h) devant la boulangerie <em>Ribeiro</em> puis marcher en direction de l&apos;arrêt de tram Charles de gaulle.
+              </div> 
+            </motion.li>
+            <motion.div 
+              className="iframe-map"
+              variants={childList}
+            >
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d880.8677997203906!2d3.8972128292533563!3d43.628027969432935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdb79ae6e7ca5afbe!2zNDPCsDM3JzQwLjkiTiAzwrA1Myc1MS45IkU!5e1!3m2!1sfr!2sfr!4v1642635452320!5m2!1sfr!2sfr" 
                 width="400" 
                 height="300" 
                 allowFullScreen="" 

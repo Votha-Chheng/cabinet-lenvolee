@@ -90,7 +90,7 @@ const HygienePage = () => {
           >
             <motion.li variants={childList}>
               <div>
-                <i className="fa-solid fa-right-long"/>
+                <i class="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 Pour les enfants et les jeunes de 3 à 24 ans, pensez au programme &ldquo;M&apos;T DENTS&rdquo; : c&apos;est un examen bucco-dentaire complet gratuit (vous n&apos;avez pas à avancez de frais) disponible tous les 3 ans.<br/>
@@ -99,7 +99,7 @@ const HygienePage = () => {
             </motion.li>
             <motion.li variants={childList}>
               <div>
-                <i className="fa-solid fa-right-long"/>
+                <i class="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 Brossez-vous les dents au moins 2 fois par jour en partant de la gencive vers la dent. Toutes les faces de la dent doivent être brossées. 
@@ -107,7 +107,7 @@ const HygienePage = () => {
             </motion.li>
             <motion.li variants={childList}>
               <div>
-                <i className="fa-solid fa-right-long"/>
+                <i class="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 Complétez votre brossage le pas&shy;sage du fil dentaire afin d&apos;éliminer la plaque dentaire rési&shy;duelle dans les espaces inter&shy;dentaires. Cepen&shy;dant, le fil dentaire doit être manipulé avec prudence de manière à ne pas léser les gencives.<br/>
@@ -122,10 +122,10 @@ const HygienePage = () => {
             </motion.div>
             <motion.li variants={childList}>
               <div>
-                <i className="fa-solid fa-right-long"/>
+                <i class="fa-solid fa-circle-play"></i>
               </div>
               <div>
-                Ne laissez pas le tartre s&apos;accumuler sur vos dents. Un détartrage chez le dentiste est conseillé tous les 2 ans. Il est impossible d&apos;enlever le tartre avec une brosse à dent.
+                Ne laissez pas le tartre s&apos;accumuler sur vos dents. Un détartrage chez le dentiste est conseillé tous les ans. Il est impossible d&apos;enlever le tartre avec une brosse à dent.
               </div>
             </motion.li>
           </motion.ul>

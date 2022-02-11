@@ -41,23 +41,15 @@ const SoinsPage = () => {
           <ul>
             <li>
               <div>
-                <i className="fa-solid fa-right-long"/>
+                <i class="fa-solid fa-circle-play"></i>
               </div>
               <div className="texte">
-                Aujourd&apos;hui, les évolutions tech&shy;niques et les théra&shy;peutiques mini invasives per&shy;mettent au patient de bénéficier d&apos;une meilleure santé globale. Grâce à ces évolutions, nous pou&shy;vons préserver les dents le plus longtemps possible sur l&apos;arcade et éviter ainsi de les enlever systéma&shy;tique&shy;ment. Ceci fera bénéficier aux patients non seule&shy;ment d&apos;une éco&shy;nomie fi&shy;nancière (en&shy;lever une dent est un acte coûteux à tous les ni&shy;veaux), mais aussi d&apos;une éco&shy;nomie tissulaire pour la mâ&shy;choire.
+                Aujourd&apos;hui, les évolutions tech&shy;niques et les théra&shy;peutiques mini invasives per&shy;mettent au patient de bénéficier d&apos;une meilleure santé globale. Grâce à ces évolutions, nous pou&shy;vons préserver les dents le plus longtemps possible sur l&apos;arcade et éviter ainsi de les enlever systéma&shy;tique&shy;ment. Les protocoles de collage ac&shy;tuels nous permet&shy;tent aussi désormais de re&shy;constituer les dents avec un déla&shy;bre&shy;ment mi&shy;nimal.
               </div>
             </li>
             <li>
               <div>
-                <i className="fa-solid fa-right-long"/>
-              </div>
-              <div>
-                Les protocoles de collage ac&shy;tuels nous permet&shy;tent aussi désormais de re&shy;constituer les dents avec un déla&shy;bre&shy;ment mi&shy;nimal.
-              </div>
-            </li>
-            <li>
-              <div>
-                <i className="fa-solid fa-right-long"/>
+                <i class="fa-solid fa-circle-play"></i>
               </div>
               <div className="texte">
                 L&apos;investissement régulier dans des sy&shy;stèmes de radio&shy;gra&shy;phie plus évolués et moins irra&shy;diants permet aux patients d&apos;être exposé à des radiations 90% plus faible qu&apos;avec un système de radiographie argen&shy;tique classique.
@@ -114,20 +106,20 @@ const SoinsPage = () => {
             <ul>
               <li>
                 <div>
-                  <i className="fa-solid fa-right-long"/>
+                  <i class="fa-solid fa-circle-play"></i>
                 </div>
                 <div>
                   Ainsi, nous faisons notre maximum pour choisir des produits éco-conçus, sans per&shy;turbateur endocrinien (tel que le bis&shy;phénol A par exemple) et fabriqués en France.
                 </div>
               </li>
               <li>
-                <div><i className="fa-solid fa-right-long"/></div>
+                <div><i class="fa-solid fa-circle-play"></i></div>
                 <div>
                   &Eacute;tant situé à 10 mètres de l&apos;arrêt de tram <em>Charles de Gaulle</em> (ligne 2), nous incitons nos patients à utiliser les transports en commun pour se rendre à leur rendez-vous.
                 </div>
               </li>
               <li>
-                <div><i className="fa-solid fa-right-long"/></div>
+                <div><i class="fa-solid fa-circle-play"></i></div>
                 <div>
                   Nos prothésistes dentaires sont tous situés à moins de 20 km du cabinet.
                 </div>

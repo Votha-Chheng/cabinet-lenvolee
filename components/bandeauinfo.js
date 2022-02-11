@@ -27,24 +27,25 @@ const BandeauInfo = () => {
         >
           <div className="images">
             <img src="/images/burger-menu.svg" width="35" style={{opacity : `${!sideMenu  ? 1 : 0}`}} alt="menu burger" />
-            <img src="/images/close.svg" width="20" style={{opacity : `${!sideMenu  ? 0 : 1 }`}}  alt="fermer menu" />
+            <img className='close' src="/images/close.svg" width="20" style={{opacity : `${!sideMenu  ? 0 : 1 }`}}  alt="fermer menu" />
           </div>
           
         </motion.div>
+        <nav className={`side-menu ${sideMenu ? "visible":""}`} aria-label="navigation secondaire">
+          <ScrollingMenu setSideMenu={setSideMenu}/>
+        </nav>    
         <motion.div 
           className='aside'
           initial={{opacity:0}}
           animate={{opacity:1}}
           transition={{duration:0.25, ease: "easeOut", delay:0.9}}
-        >
-          <nav className={`side-menu ${sideMenu ? "visible":""}`} aria-label="navigation secondaire">
-            <ScrollingMenu setSideMenu={setSideMenu}/>
-          </nav>
+        > 
+          
           <div className="info">
             <Image className="svg-img" src="/images/clock.svg" width={40} height={40} layout="fixed" alt="Horaires du cabinet l'Envolée" />
             <div className="texteInfo">
-              <div><em>Du Lundi au Vendredi</em></div>
-              <div style={{textAlign:"center"}}><em>9h00 à 19h00</em></div> 
+              <div>Lundi - Mardi - Jeudi :<em> 9h-19h</em></div>
+              <div>Vendredi :<em> 9h-17h</em></div> 
             </div>
           </div>
 
@@ -108,19 +109,41 @@ const DivContainer = styled.div`
 
     .images{
       position: relative;
-
       img{
         top:50%;
-        left:50%;
-        transform: translate(-50%, -50%);
+        left:10%;
         position: absolute;
+        
         transition: opacity 0.25s ease-out;
+
+        &.close{
+          transform:translateX(5px)
+        }
       }
     }    
   }
 
   .line-through{
     z-index: 2;
+  }
+
+  .side-menu{
+    position:absolute;
+    border-left: 2px solid var(--main-color-text);
+    border-top: 2px solid var(--main-color-text);
+    width:75vw;
+    height:100vh;
+    top:80px;
+    right:0;
+    background-color: var(--main-bgcolor);
+    transform: translate(100%, 0);
+    transition: transform 0.25s ease-out;
+    display: none;
+    z-index:6;
+
+    &.visible{
+      transform: translate(0, 0);
+    }
   }
   
   .aside {
@@ -129,31 +152,13 @@ const DivContainer = styled.div`
     justify-content: space-around;
     font-family: var(--font-info);
     position:relative;
-
-    .side-menu{
-      position:absolute;
-      border-left: 2px solid var(--main-color-text);
-      width:75vw;
-      height:100vh;
-      top:0;
-      right:0;
-      background-color: var(--main-bgcolor);
-      transform: translate(100%, 0);
-      transition: transform 0.25s ease-out;
-      display: none;
-
-      &.visible{
-        transform: translate(0, 0);
-      }
-    }
-
   }
   .info{
     display: flex;
     align-items: center;
     color: var(--main-color-text);
     font-family: 'Oswald', sans-serif;
-    margin-right: 30px;
+    margin-right: 25px;
     
     .texteInfo{
       margin-left: 10px;
@@ -171,7 +176,7 @@ const DivContainer = styled.div`
 
   @media (max-width: 1500px){
     .aside{
-      width: 825px;
+      width: 850px;
       padding-bottom:7.5px;
 
       .info{
@@ -198,6 +203,9 @@ const DivContainer = styled.div`
     top:0;
     border-bottom:2px solid var(--main-color-text);
 
+    .side-menu{
+      display: block;
+    }
     .burger-menu{
       opacity: 1;
       display: block;
@@ -207,9 +215,7 @@ const DivContainer = styled.div`
       flex-direction: column;
       padding: 0;
       
-      .side-menu{
-        display: block;
-      }
+      
 
       .info{
         width:100%;
@@ -228,14 +234,22 @@ const DivContainer = styled.div`
       }
     }
   }
+  @media (max-width:500px){
+    .burger-menu{
+      transform:translateY(10px) !important;
+    }
+    .aside{
+      display:none;
+    }
+  }
   @media (max-width: 410px){
     .wide{
-    display: none;
-  }
-  .responsive{
-    display: block;
-    text-align: center;
-  }
+      display: none;
+    }
+    .responsive{
+      display: block;
+      text-align: center;
+    }
   }
 `
 

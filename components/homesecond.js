@@ -161,33 +161,33 @@ const HomeSecond = () => {
         >
           <LineThrough width="2px" height="100%" backgroundColor="var(--main-bgcolor)" />
         </motion.div>
-        <motion.div 
+        {/* <motion.div 
           className="vertical-line down"
           variants={childrenVerticalLinesToTop}
           initial="start"
           animate={secondBandeauTrigger && "animation"}
         >
           <LineThrough width="2px" height="100%" backgroundColor="var(--main-bgcolor)" />
-        </motion.div>
-        <motion.div 
+        </motion.div> */}
+        {/* <motion.div 
           className="vertical-line down-responsive"
           variants={childrenVerticalLinesToTop}
           initial="start"
           animate={secondBandeauTrigger && "animation"}
         >
           <LineThrough width="2px" height="100%" backgroundColor="var(--main-bgcolor)" />
-        </motion.div>
-        <motion.div 
+        </motion.div> */}
+        {/* <motion.div 
           className="horizontal-line between"
           variants={childrenLineToRight}
         >
           <LineThrough width="90%" height="2px" backgroundColor="var(--main-bgcolor)" />
-        </motion.div>
+        </motion.div> */}
         <motion.div 
           className="horizontal-line bottom"
           variants={lineToLeft}
           initial="initial"
-          animate={`${secondBandeauTrigger && "animate"}`}
+          animate={`${triggerOnce && "animate"}`}
         >
           <LineThrough width="90%" height="2px" backgroundColor="var(--main-bgcolor)" />
         </motion.div>
@@ -226,7 +226,7 @@ const HomeSecond = () => {
           </div>
         </div>
 
-        <div className="bandeau-first" style={{position:"relative"}}>
+        {/* <div className="bandeau-first" style={{position:"relative"}}>
           <div className="flex-container">
             <motion.div 
               className="line-container second"
@@ -262,7 +262,7 @@ const HomeSecond = () => {
             </motion.div> 
           </div>
           <InView onChange={(inView, entry)=> inView && setSecondBabdeauTrigger(true)} />  
-        </div>
+        </div> */}
       </motion.div>
       <motion.div 
         className="button-call"
@@ -292,7 +292,7 @@ const DivWrapper = styled.div`
     transition-property: background-color ;
     
     &.second{
-      height:40%;
+      height:15%;
     }
   }
 
@@ -367,14 +367,14 @@ const DivWrapper = styled.div`
       column-gap:25px;
       margin: 0 auto;
       position: relative;
-      border:5px solid red;
+      /* border:5px solid red; */
 
       .line-container{
         position: absolute;
         width: 100%;
         transform:translate(0, -50%);
-        top: 55%;
-        left: 5%;
+        top: 60%;
+        left: 4%;
 
         &.second{
           left: auto;

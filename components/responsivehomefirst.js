@@ -192,7 +192,6 @@ const ArticleWrapper = styled.article`
   width: 100%;
   display: none;
   flex-direction: column;
-  margin-top: 233px;
   transition: background-color 0.3s ease-out;
   overflow: hidden;
 
@@ -265,6 +264,10 @@ const ArticleWrapper = styled.article`
     height:900px;
     width:100%;
     display: flex;
+    margin-top:90px;
+  }
+  @media (max-width: 500px){
+    margin-top:0px;
   }
 `
 

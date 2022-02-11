@@ -19,7 +19,8 @@ const Footer = () => {
                   <Image className="svg-img" src="/images/clock.svg" width={30} height={30} layout="fixed" alt="Horaires du cabinet l'Envolée"/>
                 </div>
                 <span className="texte">
-                Du Lundi au Vendredi<br/>de 9h00 à 19h00
+                Lundi - Mardi - Jeudi :<em> 9h à 19h</em><br/>
+                Vendredi :<em> 9h-17h</em>
                 </span>
               </div>
               <div className="flex-item">
@@ -93,10 +94,10 @@ const Footer = () => {
                 <em>
                   <ul style={{margin:"-5px 0 0 0", padding:"0", listStyle:"none"}}>
                     <li>
-                      Parking Place Ch. de Gaulle (2h gratuites)
+                      Parking TAM souterrain accès rue du Prado (payant)
                     </li>
                     <li>
-                      Parking souterrain accès rue du Prado (payant)
+                      Parking Place Ch. de Gaulle (2h gratuites)
                     </li>
                   </ul>
                 </em>

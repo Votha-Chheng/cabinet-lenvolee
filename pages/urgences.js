@@ -84,20 +84,17 @@ const UrgencesPage = () => {
               variants={childList}
             >
               <div>
-                <i className="fa-solid fa-right-long"/>
+                <i class="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 Munissez-vous d&apos;une com&shy;pres&shy;se sté&shy;rile (ou à défaut d&apos;un tissu propre). Placez-la entre le point de saigne&shy;ment et l&apos;arcade op&shy;po&shy;sée, puis serrez fort pen&shy;dant une di&shy;zaine de minutes.
               </div>
             </motion.li>
-            <div className="img-saignement">
-              Image illustrant la manière de poser la compresse sur l&apos;arcade pour stopper le saignement.
-            </div>
             <motion.li
               variants={childList}
             >
               <div>
-                <i className="fa-solid fa-right-long"/>
+                <i class="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 Préférez la position assi&shy;se.
@@ -107,7 +104,7 @@ const UrgencesPage = () => {
               variants={childList}
             >
               <div>
-                <i className="fa-solid fa-right-long"/>
+                <i class="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 Préférez une alimentation froi&shy;de.
@@ -146,7 +143,7 @@ const UrgencesPage = () => {
               variants={childList}
             >
               <div>
-                <i className="fa-solid fa-right-long"/>
+                <i class="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 Prenez con&shy;tact im&shy;mé&shy;diate&shy;ment avec no&shy;tre équi&shy;pe.
@@ -156,7 +153,7 @@ const UrgencesPage = () => {
               variants={childList}
             >
               <div>
-                <i className="fa-solid fa-right-long"/>
+                <i class="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 <em>S&apos;il y a expulsion d&apos;une dent dé&shy;finitive :</em> le geste d&apos;ur&shy;gen&shy;ce con&shy;siste à récupérer la dent, sans la net&shy;toyer, et à la con&shy;ser&shy;ver dans du <em>sérum phy&shy;siologique ou du lait (si&shy;non la conserver dans sa propre sa&shy;li&shy;ve)</em>. La ré&shy;im&shy;plan&shy;tation, si elle est pos&shy;si&shy;ble, devra se faire aussi rapi&shy;dement que possible.
@@ -166,7 +163,7 @@ const UrgencesPage = () => {
               variants={childList}
             >
               <div>
-                <i className="fa-solid fa-right-long"/>
+                <i class="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 S&apos;il y a déplacement des dents défi&shy;nitives : le geste d&apos;ur&shy;gence consiste, à chaud, à les repla&shy;cer cor&shy;rec&shy;tement avec la pres&shy;sion des doigts.
