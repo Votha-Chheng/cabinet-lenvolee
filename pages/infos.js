@@ -66,7 +66,7 @@ const InfosPratiques = () => {
             <div className="first-div">Le jour de votre rendez-vous :</div>
             <li>
               <div>
-                <i class="fa-solid fa-circle-play"></i>
+                <i className="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 Venez non accompagné, dans la mesure du possi&shy;ble.
@@ -74,7 +74,7 @@ const InfosPratiques = () => {
             </li>
             <li>
               <div>
-                <i class="fa-solid fa-circle-play"></i>
+                <i className="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 Lavez-vous les mains et les dents avant de venir.
@@ -82,7 +82,7 @@ const InfosPratiques = () => {
             </li>
             <li>
               <div>
-                <i class="fa-solid fa-circle-play"></i>
+                <i className="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 Le port du masque est obli&shy;ga&shy;toire à l&apos;inté&shy;rieur du cabi&shy;net.
@@ -90,7 +90,7 @@ const InfosPratiques = () => {
             </li>
             <li>
               <div>
-                <i class="fa-solid fa-circle-play"></i>
+                <i className="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 Réduisez vos effets per&shy;son&shy;nels au mini&shy;mum dans la mesure du possible (tels que les bijoux et autres acces&shy;soires de mode).
@@ -98,7 +98,7 @@ const InfosPratiques = () => {
             </li>
             <li>
               <div>
-                <i class="fa-solid fa-circle-play"></i>
+                <i className="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 Privilégiez les paiements par carte ban&shy;caire.
@@ -112,7 +112,7 @@ const InfosPratiques = () => {
             </div>
             <li>
               <div>
-                <i class="fa-solid fa-circle-play"></i>
+                <i className="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 Respectez les distances so&shy;ciales.
@@ -120,7 +120,7 @@ const InfosPratiques = () => {
             </li>
             <li>
               <div>
-                <i class="fa-solid fa-circle-play"></i>
+                <i className="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 Evitez les contacts.
@@ -128,7 +128,7 @@ const InfosPratiques = () => {
             </li>
             <li>
               <div>
-                <i class="fa-solid fa-circle-play"></i>
+                <i className="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 Lavez vos mains avec la so&shy;lution hydro-alcoolique four&shy;nie à l’ac&shy;cueil.
@@ -195,7 +195,7 @@ const InfosPratiques = () => {
               variants={childList}
             >
               <div>
-                <i class="fa-solid fa-circle-play"></i>
+                <i className="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 Par le tramway, arrêt Charles de Gaulle ligne 2.
@@ -206,7 +206,7 @@ const InfosPratiques = () => {
             </motion.div>
             <motion.li variants={childList}>
               <div>
-                <i class="fa-solid fa-circle-play"></i>
+                <i className="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 Le Parking TAM souterrain (CAP CONCORDE) est situé dans la résidence du Prado, au niveau de l&apos;enseigne Krys, <em>rue du Prado</em>. Suivez le panneau <em>"Parking TAM"</em>.
@@ -229,7 +229,7 @@ const InfosPratiques = () => {
               variants={childList}
             >
               <div>
-                <i class="fa-solid fa-circle-play"></i>
+                <i className="fa-solid fa-circle-play"></i>
               </div>
               <div>
                 Parking Place Charles de Gaulle (gratuit 2h) devant la boulangerie <em>Ribeiro</em> puis marcher en direction de l&apos;arrêt de tram Charles de gaulle.
