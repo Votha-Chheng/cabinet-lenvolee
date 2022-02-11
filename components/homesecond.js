@@ -322,12 +322,12 @@ const DivWrapper = styled.div`
       &.right{
         right:0;
         top:0;
-        height:90%;
+        height:102%;
       }
       &.up{
         right:500px;
         top:0;
-        height:55%;
+        height:105%;
       }
       &.down{
         left:500px;
@@ -352,9 +352,9 @@ const DivWrapper = styled.div`
         left:-10%;
       }
       &.bottom{
-        width:105%;
+        width:115%;
         bottom:0;
-        right:5%;
+        right:-95px;
       }
     } 
   }
