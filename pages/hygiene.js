@@ -121,7 +121,7 @@ const HygienePage = () => {
               </motion.li>
               <motion.div className="illustration" variants={childList}>
                 <div className="img-container">
-                  <Image src="/images/brossettes.jpg" layout="fill" objectFit="cover"/>
+                  <Image src="/images/brossettes.jpg" alt="Brossettes interdentaires Curaprox" layout="fill" objectFit="cover"/>
                 </div>
                 <small>Exemple de brossettes de marque Curaprox®</small>
               </motion.div>

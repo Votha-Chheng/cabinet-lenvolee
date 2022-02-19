@@ -210,7 +210,7 @@ const HomeSecond = () => {
               <h2 className="nom-citation">Chirurgienne dentiste depuis 2010</h2>
               <p>
                 <i className="fa-solid fa-quote-left"/>
-                  Forte de 10 ans d&apos;expérience dans la dentisterie, l&apos;aspect esthétique du sourire tient une part aussi importante que le soin dans mon approche. In id esse amet excepteur exercitation excepteur.
+                  Bien que docteure en chirurgie dentaire et praticienne depuis maintenant plus de 10 ans, il me tient toujours à c&#339;ur de me former aux techniques contemporaines de la dentisterie, et me perfectionner dans ma pratique. Et ce, du diagnostic jusqu&apos;au traitement, en passant par la dimension esthétique. Ainsi, c&apos;est dans une atmosphère professionelle - et néanmoins conviviale - que j&apos;aurai le plaisir de vous accueillir au sein du cabinet L&apos;Envolée.
                 <i className="fa-solid fa-quote-right"/>
               </p>
             </motion.div>
