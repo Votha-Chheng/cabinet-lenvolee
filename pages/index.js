@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Cabinet dentaire l&apos;Envolée || Dr Sylvie Ma - Chirurgienne - dentiste || Montpellier - Castelnau-le-Lèz </title>
+        <title>Dr Sylvie Ma - Chirurgienne - Dentiste || Cabinet dentaire l&apos;Envolée || Montpellier - Castelnau-le-Lèz </title>
       </Head>
       <HomeFirst />
       <ResponsiveHomeFirst/>

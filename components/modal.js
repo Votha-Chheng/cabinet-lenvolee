@@ -68,7 +68,6 @@ const ModalWrapper = styled.div`
   @media (max-width:500px){
     i{
       top:10%;
-
     }
   }
   

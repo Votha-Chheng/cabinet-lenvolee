@@ -16,14 +16,14 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta charSet="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1"/>
-        <meta name="description" content="A la recherche d'un massage ou d'un moment propice à la détente sur Arles et la région des Alpilles ?... Baux'T des sens vous propose des séances de massage à domicile et d'initiation au Hata yoga."/>
+        <meta name="description" content="Soins dentaires, esthétique du sourire et green dentistry sur Montpellier et sa région : bienvenue sur le site du cabinet dentaire L'Envolée"/>
         <meta property="og:title" content="Cabinet dentaire L'Envolée du Dr Sylvie Ma-Francin à Castelnau-le-Lez" />
-        <meta property="og:image" content="https://zupimages.net/up/21/33/4t0a.jpg"/>
+        <meta property="og:image" content="https://zupimages.net/up/22/07/zoag.png"/>
         <meta property="og:image:type" content="image/jpg"/>
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="fr" />
         <link rel="stylesheet/css" href='/global.css'/>
-        <link rel="icon" href="" />
+        <link rel="icon" href="/images/logo1.svg" />
         <link 
           rel="stylesheet" 
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
