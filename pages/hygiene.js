@@ -184,6 +184,12 @@ const MainWrapper = styled.main`
     ul{
       padding: 0 15px;
     }
+    .illustration {
+      width:100%;
+    }
+    .img-coin{
+      width:100%;
+    }
   }
 `
 export default HygienePage;

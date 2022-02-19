@@ -64,6 +64,13 @@ const ModalWrapper = styled.div`
     z-index:6;
     background-color:white;
   }
+
+  @media (max-width:500px){
+    i{
+      top:10%;
+
+    }
+  }
   
 `
 

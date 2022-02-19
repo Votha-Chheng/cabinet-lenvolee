@@ -221,7 +221,7 @@ const HomeSecond = () => {
               initial="initial"
               animate={triggerOnce && "animate"}
             >
-              <Image src="/images/pose.jpg" layout="fill" objectFit="cover" alt=""/>
+              <Image src="/images/portrait.jpg" layout="fill" objectFit="cover" alt=""/>
             </motion.div>
           </div>
         </div>
@@ -322,12 +322,12 @@ const DivWrapper = styled.div`
       &.right{
         right:0;
         top:0;
-        height:102%;
+        height:112%;
       }
       &.up{
-        right:500px;
+        right:350px;
         top:0;
-        height:105%;
+        height:107.5%;
       }
       &.down{
         left:500px;
@@ -361,7 +361,7 @@ const DivWrapper = styled.div`
 
   .bandeau-first{
     .flex-container{
-      height:600px;
+      height:500px;
       display: flex;
       justify-content: space-around;
       column-gap:25px;
@@ -385,7 +385,7 @@ const DivWrapper = styled.div`
 
       .img-container{
         height:100%;
-        min-width:500px;
+        min-width:350px;
         position: relative;
       }
 
@@ -459,7 +459,7 @@ const DivWrapper = styled.div`
         &.up-responsive{
           right:350px;
           top:0;
-          height:55%;
+          height:105%;
           display: block;
         }
       }

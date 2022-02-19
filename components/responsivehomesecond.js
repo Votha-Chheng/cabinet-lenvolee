@@ -27,20 +27,20 @@ const ResponsiveHomeSecond = () => {
         />
       </InView>
       <CardHome 
-        image = "pose" 
+        image = "portrait" 
         title = "Sylvie MA-FRANCIN" 
         subtitle = "Chirurgienne dentiste depuis 2010" 
         text = "Forte de 10 ans d&apos;expérience dans la dentisterie, l&apos;aspect esthétique du sourire tient une part aussi importante que le soin dans mon approche. In id esse amet excepteur exercitation excepteur." 
         alignItem="center"
         />
 
-      <CardHome 
+      {/* <CardHome 
         image = "nurse-pose" 
         title = "Christelle NOM DE FAMILLE" 
         subtitle = "Assistante dentaire" 
         text = "In id esse amet excepteur exercitation excepteur. Veniam sit dolor esse fugiat elit veniam esse laboris cupidatat ex dolore ipsum. Cillum ipsum ut laborum elit velit qui aliquip ad sint sunt excepteur et nostrud."
         alignItem="center"
-        />
+        /> */}
       <div className="button-container" style={{backgroundColor:`${triggerOne ?"whitesmoke" : "#363c51"}`}}>
         <ButtonCall/> 
       </div>  
@@ -55,13 +55,11 @@ const SectionWrapper = styled.section`
   position:relative;
   transition: background-color 0.3s ease-out;
   padding-bottom: 75px;
+  margin-bottom:0;
   
   .trigger-2{
-    position:relative;
-  }
-  .trigger-2{
     position:absolute;
-    height:60%;
+    height:30%;
     width:100%;
   }
 

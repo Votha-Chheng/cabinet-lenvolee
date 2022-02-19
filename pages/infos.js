@@ -198,7 +198,7 @@ const InfosPratiques = () => {
                 <i className="fa-solid fa-circle-play"></i>
               </div>
               <div>
-                Par le tramway, arrêt Charles de Gaulle ligne 2.
+                Par le tramway, arrêt Char&shy;les de Gaulle ligne 2.
               </div>
             </motion.li>
             <motion.div className="first-div" variants={childList}>
@@ -209,7 +209,7 @@ const InfosPratiques = () => {
                 <i className="fa-solid fa-circle-play"></i>
               </div>
               <div>
-                Le Parking TAM souterrain (CAP CONCORDE) est situé dans la résidence du Prado, au niveau de l&apos;enseigne Krys, <em>rue du Prado</em>. Suivez le panneau <em>&quot;Parking TAM&quot;</em>.
+                Le Parking TAM souterrain (CAP CONCORDE) est si&shy;tué dans la résidence du Prado, au niveau de l&apos;en&shy;seigne Krys, <em>rue du Prado</em>. Suivez le panneau <em>&quot;Par&shy;king TAM&quot;</em>.
               </div>
             </motion.li> 
             <motion.div
@@ -283,12 +283,12 @@ const MainWrapper = styled.main`
   }
   @media (max-width:490px){
     .iframe-map{
-      margin-left:calc((100px - 100%)/9);
+      margin-left:calc(-(100%-400px)/2);
     }
   }
   @media (max-width:440px){
     .iframe-map{
-      margin-left:-60px;
+      margin-left:-50px;
     }
   }
 `

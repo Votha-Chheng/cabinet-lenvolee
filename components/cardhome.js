@@ -36,8 +36,8 @@ const CardHome = ({image, title, subtitle, text, alignItem}) => {
         animate={photoOneTriggerOnce && "animate"}
       >  
         <Image src={`/images/${image}-768.jpg`} layout="fill" objectFit="cover" alt="photo Sylvie Ma-Francin chirugienne dentiste"/>
-        <InView className="photo-1-trigger" onChange={(inView, entry)=> inView && setPhotoOneTriggerOnce(true)} />
       </motion.div>
+      <InView className="photo-1-trigger" onChange={(inView, entry)=> inView && setPhotoOneTriggerOnce(true)} />
       <motion.p
         className="description-img"
         initial={{opacity: 0}}
@@ -75,7 +75,7 @@ const CardWrap = styled.div`
 
   .photo-1-trigger{
     position: absolute;
-    top:50%;
+    top:25%;
   }
 
   .line-bottom-pic{
@@ -128,6 +128,7 @@ const CardWrap = styled.div`
     font-weight:bold;
     font-size: 1.1rem;
     letter-spacing: 1.75px;
+    text-indent:0;
 
     i.fa-quote-left{
       transform:translateY(-10px); 

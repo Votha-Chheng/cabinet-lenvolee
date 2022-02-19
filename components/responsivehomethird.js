@@ -24,7 +24,7 @@ const ResponsiveHomeThird = () => {
         titleColor="whitesmoke"
       />
       <InView as="div" className="inview-line" onChange={setPartInViewOnce} />
-      <InView as="div" onChange={(inView, entry)=>inView && setCarouselInView(true)} rootMargin="-150px 0px">
+      <InView as="div" onChange={(inView, entry)=> setCarouselInView(true)} rootMargin="-150px 0px">
         <CarouselResponsive isInView={carouselInView}/>
       </InView>
       
