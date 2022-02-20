@@ -45,7 +45,7 @@ const Footer = () => {
                   <Image src="/images/location.svg" width={30} height={30} layout="fixed" alt="Accès au cabinet sur le plan"/>
                 </div>
                 <span className="texte">
-                  <a href="https://www.google.fr/maps/place/L'envol%C3%A9e+Cabinet+dentaire/@43.6284937,3.895878,17z/data=!4m5!3m4!1s0x12b6af1eb59a905f:0x81b577b1ccc1138e!8m2!3d43.6283792!4d3.8969015" target="_blank" rel="noreferrer">
+                  <a href="https://www.google.fr/maps/place/Dr+Sylvie+MA+-+Francin+L+envol%C3%A9e-cabinet+dentaire/@43.6283831,3.8947128,17z/data=!3m1!4b1!4m5!3m4!1s0x12b15d67b2934f89:0x93197d4f7d8e15e4!8m2!3d43.6283792!4d3.8969015" target="_blank" rel="noreferrer">
                     Résidence L&apos;Envolée<br/>
                     3 place Charles de Gaulle<br/>
                     34 170 Castelnau-le-Lez
@@ -108,7 +108,7 @@ const Footer = () => {
 
         <div className="location-flex">
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2887.9454787619643!2d3.895878!3d43.6284937!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6af1eb59a905f%3A0x81b577b1ccc1138e!2sL&#39;envol%C3%A9e%20Cabinet%20dentaire!5e0!3m2!1sfr!2sfr!4v1638958912048!5m2!1sfr!2sfr" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.9507945836594!2d3.894712815722399!3d43.62838306205268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b15d67b2934f89%3A0x93197d4f7d8e15e4!2sDr%20Sylvie%20MA%20-%20Francin%20L%20envol%C3%A9e-cabinet%20dentaire!5e0!3m2!1sfr!2sfr!4v1645314375693!5m2!1sfr!2sfr" 
             allowFullScreen="" 
             loading="lazy"
           />
