@@ -6,6 +6,7 @@ import Modal from "./modal";
 import { useTriggerInview } from "@/context/BgColorContext";
 import ImageModal from "./imagemodal";
 import LineThrough from "./linethrough";
+import ScrollImageModal from "./scrollimagemodal";
 
 const VerticalCarousel = ({triggerAnim, triggerColorLines}) => {
 
@@ -195,7 +196,7 @@ const VerticalCarousel = ({triggerAnim, triggerColorLines}) => {
         </motion.div>
       </div>
       <Modal show={show}>
-        <Image src={`/images/${imgModal}.jpg`} layout="fill" objectFit="contain" alt={imgModal}/>
+        <ScrollImageModal listeImages={['lobby', 'accueil-one', 'entree', 'accueil-3', 'accueil-2', 'salle-attente(2)']} selectedImage={imgModal} />
       </Modal>
     </CarouselWrap>
   );

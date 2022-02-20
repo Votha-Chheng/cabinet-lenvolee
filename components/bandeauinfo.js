@@ -219,8 +219,6 @@ const DivContainer = styled.div`
       flex-direction: column;
       padding: 0;
       
-      
-
       .info{
         width:100%;
         padding-left: 30px;

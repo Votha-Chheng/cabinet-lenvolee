@@ -91,7 +91,7 @@ const ButtonCall = ({text}) => {
 }
 
 ButtonCall.defaultProps = {
-  text: "Penons RDV"
+  text: "Prenons RDV"
 }
 
 const ButtonWrap = styled.div`

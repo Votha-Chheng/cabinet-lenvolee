@@ -36,6 +36,7 @@ const DivWrapper = styled.div`
   display: none;
   overflow: hidden;
   transition: background-color 0.3s ease-out;
+  
   @media (max-width: 768px){
     display: block;
   }

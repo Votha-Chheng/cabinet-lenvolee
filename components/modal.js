@@ -41,35 +41,46 @@ const ModalWrapper = styled.div`
   left:0;
   justify-content:center;
   align-items:center;
-  z-index:5000;
+  z-index:500000;
 
   .layer{
     width:100vw;
     height:100vh;
     background-color:rgba(0, 0, 0, 0.75);
     position:absolute;
-    z-index:5;
+    z-index:50;
   }
   i{
     position:absolute;
     top:5%;
     right:5%;
-    z-index:7;
+    z-index:80;
     cursor:pointer;
   }
   .children-container{
     position:relative;
     height:90vh;
-    width:90vw;
-    z-index:6;
+    width:100%;
+    z-index:60;
     background-color:white;
+    overflow:hidden;
   }
 
-  @media (max-width:500px){
+  @media (max-width:768px){
     i{
       top:10%;
     }
+    .children-container {
+      width:500px;
+    }
   }
+
+  @media (max-width:500px){
+    .children-container{
+      width:360px;
+    }
+  }
+
   
 `
 

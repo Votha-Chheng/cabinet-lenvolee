@@ -6,6 +6,7 @@ import ImageModal from "./imagemodal"
 import Modal from "./modal"
 import {InView} from "react-intersection-observer"
 import { motion } from "framer-motion"
+import ScrollImageModalResponsive from "./scrollimagemodalresponsive"
 
 const CarouselResponsive = ({isInView}) => {
   const [imgModal, setImgModal] = useState("")
@@ -26,8 +27,8 @@ const CarouselResponsive = ({isInView}) => {
   }
 
   const handleTouchEnd = ()=>{
-    if(translationX>1750){
-      setTranslationX(1750)
+    if(translationX>1850){
+      setTranslationX(1850)
     } else if (translationX<0){
       setTranslationX(0)
     }
@@ -39,13 +40,13 @@ const CarouselResponsive = ({isInView}) => {
   }
 
   return (
-    <CarouselWrapper >
+    <CarouselWrapper style={{zIndex:`${show? 10: 2}`}}>
       <motion.div 
         className="carousel-container"
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
         onTouchMove={handleTouchMove}
-        style={{transform: `translateX(-${translationX*1.1}px)`}}
+        style={{transform: `translateX(-${translationX}px)`}}
         initial={{opacity:0}}
         animate={isInView ? {opacity:1} : ""}
         transition={{duration:0.5, delay:0.25, ease:"easeOut"}}
@@ -71,7 +72,10 @@ const CarouselResponsive = ({isInView}) => {
       </motion.div>
       <InView as="div" className="inview-line-second" onChange={(inView, entry)=>setBottomInView(inView)} />
       <Modal show={show}>
-        <Image src={`/images/${imgModal}.jpg`} layout="fill" objectFit="contain" alt={imgModal}/>
+        <ScrollImageModalResponsive
+          listeImages={['lobby', 'accueil-one', 'entree', 'accueil-3', 'accueil-2', 'salle-attente(2)']}
+          selectedImage={imgModal}
+        />
       </Modal>
     </CarouselWrapper>
   );
@@ -79,7 +83,6 @@ const CarouselResponsive = ({isInView}) => {
 
 const CarouselWrapper = styled.section`
   display: none;
-  z-index: 2;
   width:100%;
 
   .carousel-container{
