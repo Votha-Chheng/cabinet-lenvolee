@@ -2,23 +2,25 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 
-const scrollimagemodal = ({listeImages, selectedImage}) => {
+const ScrollImageModal = ({listeImages, selectedImage}) => {
 
   const [scrolling, setScrolling] = useState(0)
 
+  
   useEffect(()=>{
-    setHorizontalScroll(selectedImage)
-    console.log(scrolling)
+    const getHorizontalScroll = (selectedImage)=> {
+      for(let i=0 ; i<listeImages.length ; i++){
+        if(listeImages[i]===selectedImage){
+          setScrolling(-i*100)
+        }
+      }  
+    }
 
-  }, [selectedImage])
+    getHorizontalScroll(selectedImage)
 
-  const setHorizontalScroll = (selectedImage)=> {
-    for(let i=0 ; i<listeImages.length ; i++){
-      if(listeImages[i]===selectedImage){
-        setScrolling(-i*100)
-      }
-    }  
-  }
+  }, [selectedImage, listeImages])
+
+  
 
   const toPreviousImage = (translationXValue)=>{
     setScrolling(translationXValue + 100)
@@ -95,4 +97,4 @@ const ScrollContainer = styled.div`
 
 `
 
-export default scrollimagemodal;
+export default ScrollImageModal;

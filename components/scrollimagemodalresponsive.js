@@ -2,17 +2,30 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 
-const scrollimagemodalresponsive = ({listeImages, selectedImage}) => {
+const ScrollImageModalResponsive = ({listeImages, selectedImage}) => {
   const [scrolling, setScrolling] = useState(0)
   const [touchStart, setTouchStart] = useState(0)
   const [touchEnd, setTouchEnd] = useState(0)
   const [narrowScreen, setNarrowScreen] = useState(false)
 
-
+  
   useEffect(()=>{
-    setHorizontalScroll(selectedImage)
+    const getHorizontalScroll = (selectedImage)=> {
+      for(let i=0 ; i<listeImages.length ; i++){
+        if(listeImages[i]===selectedImage){
+          if(narrowScreen){
+            setScrolling(i*360)
+          } else {
+            setScrolling(i*500)
+          }
+          
+        }
+      }  
+    }
+
+    getHorizontalScroll(selectedImage)
     
-  }, [selectedImage])
+  }, [selectedImage, listeImages, narrowScreen])
 
   useEffect(()=>{
     const mediaWatcher = window.matchMedia("(max-width: 500px)")
@@ -30,14 +43,6 @@ const scrollimagemodalresponsive = ({listeImages, selectedImage}) => {
     }
 
   }, [])
-
-  const setHorizontalScroll = (selectedImage)=> {
-    for(let i=0 ; i<listeImages.length ; i++){
-      if(listeImages[i]===selectedImage){
-        setScrolling(i*500)
-      }
-    }  
-  }
 
   const handleTouchStart = (event)=>{
     setTouchStart(event.targetTouches[0].clientX)
@@ -80,9 +85,8 @@ const scrollimagemodalresponsive = ({listeImages, selectedImage}) => {
     }
   }
 
-
   return (
-    <ScrollContainer >
+    <ScrollContainer>
       <div 
         className="scroller-responsive" 
         style={{transform:`translateX(${-scrolling}px)`}}
@@ -134,4 +138,4 @@ const ScrollContainer = styled.div`
   }
 `
 
-export default scrollimagemodalresponsive;
+export default ScrollImageModalResponsive;
