@@ -210,7 +210,7 @@ const HomeSecond = () => {
               <h2 className="nom-citation">Chirurgienne dentiste depuis 2010</h2>
               <p>
                 <i className="fa-solid fa-quote-left"/>
-                  Bien que docteure en chirurgie dentaire et praticienne depuis maintenant plus de 10 ans, il me tient toujours à c&#339;ur de me former aux techniques contemporaines de la dentisterie, et me perfectionner dans ma pratique. Et ce, du diagnostic jusqu&apos;au traitement, en passant par la dimension esthétique. Ainsi, c&apos;est dans une atmosphère professionelle - et néanmoins conviviale - que j&apos;aurai le plaisir de vous accueillir au sein du cabinet L&apos;Envolée.
+                  Bien que docteure en chirurgie dentaire et praticienne depuis maintenant plus de 10 ans, il me tient toujours à c&#339;ur de me former aux techniques contemporaines de la dentisterie, et me perfectionner dans ma pratique ; et ce, du diagnostic jusqu&apos;au traitement, en passant par la dimension esthétique. Ainsi, c&apos;est dans une atmosphère professionelle - et néanmoins conviviale - que j&apos;aurai le plaisir de vous accueillir au sein du cabinet <em><b>L&apos;Envolée</b></em>.
                 <i className="fa-solid fa-quote-right"/>
               </p>
             </motion.div>

@@ -30,7 +30,7 @@ const ResponsiveHomeSecond = () => {
         image = "portrait" 
         title = "Sylvie MA-FRANCIN" 
         subtitle = "Chirurgienne dentiste depuis 2010" 
-        text = "Bien que docteure en chirurgie dentaire et praticienne depuis maintenant plus de 10 ans, il me tient toujours à c&#339;ur de me former aux techniques contemporaines de la dentisterie, et me perfectionner dans ma pratique. Et ce, du diagnostic jusqu&apos;au traitement, en passant par la dimension esthétique. Ainsi, c&apos;est dans une atmosphère professionelle - et néanmoins conviviale - que j&apos;aurai le plaisir de vous accueillir au sein du cabinet." 
+        text = "Bien que docteure en chirurgie dentaire et praticienne depuis maintenant plus de 10 ans, il me tient toujours à c&#339;ur de me former aux techniques contemporaines de la dentisterie, et me perfectionner dans ma pratique ; et ce, du diagnostic jusqu&apos;au traitement, en passant par la dimension esthétique. Ainsi, c&apos;est dans une atmosphère professionelle - et néanmoins conviviale - que j&apos;aurai le plaisir de vous accueillir au sein du cabinet." 
         alignItem="center"
         />
 
