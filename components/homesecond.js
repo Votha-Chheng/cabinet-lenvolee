@@ -197,7 +197,7 @@ const HomeSecond = () => {
               className="line-container"
               variants={childrenFadeIn}
             >
-              <LineThrough width="100%" height="200px" backgroundColor="var(--main-color-text)" />  
+              <LineThrough width="100%" height="100%" backgroundColor="var(--main-color-text)" />  
             </motion.div>
               
             <motion.div 
@@ -210,7 +210,7 @@ const HomeSecond = () => {
               <h2 className="nom-citation">Chirurgienne dentiste depuis 2010</h2>
               <p>
                 <i className="fa-solid fa-quote-left"/>
-                  Bien que docteure en chirurgie dentaire et praticienne depuis maintenant plus de 10 ans, il me tient toujours à c&#339;ur de me former aux techniques contemporaines de la dentisterie, et me perfectionner dans ma pratique ; et ce, du diagnostic jusqu&apos;au traitement, en passant par la dimension esthétique. Ainsi, c&apos;est dans une atmosphère professionelle - et néanmoins conviviale - que j&apos;aurai le plaisir de vous accueillir au sein du cabinet <em><b>L&apos;Envolée</b></em>.
+                  Bien que docteure en chirurgie dentaire et praticienne depuis maintenant plus de 10 ans, il me tient toujours à c&#339;ur de me former aux techniques contemporaines de la dentisterie, et me per&shy;fec&shy;tionner dans ma pratique ; et ce, du diagnostic jusqu&apos;au traitement, en passant par la dimension esthétique. Ainsi, c&apos;est dans une atmosphère pro&shy;fessionelle - et néanmoins convi&shy;viale - que j&apos;au&shy;rai le plaisir de vous accueillir au sein du cabinet <em><b>l&apos;Envolée</b></em>.
                 <i className="fa-solid fa-quote-right"/>
               </p>
             </motion.div>
@@ -367,11 +367,11 @@ const DivWrapper = styled.div`
       column-gap:25px;
       margin: 0 auto;
       position: relative;
-      /* border:5px solid red; */
 
       .line-container{
         position: absolute;
         width: 100%;
+        height:130px;
         transform:translate(0, -50%);
         top: 60%;
         left: 4%;
@@ -417,6 +417,7 @@ const DivWrapper = styled.div`
           font-weight:bold;
           font-size: 1.25rem;
           letter-spacing: 1px;
+          text-align: justify;
 
           i.fa-quote-left{
             transform:translateY(-10px); 
@@ -480,6 +481,41 @@ const DivWrapper = styled.div`
     }
   }
 
+  @media (max-width:980px){
+    .bandeau-first {
+      .flex-container{
+        .description-img{
+          padding-right: 0;
+          p{
+            margin-top:10px ;
+          }
+        
+        }
+        .line-container {
+          top:300px;
+          height:280px;
+        }
+      }
+    }
+  }
+  @media (max-width:820px){
+    .bandeau-first {
+      .flex-container{
+        .description-img{
+          padding-right: 0;
+
+          p{
+            font-size:1.1rem;
+          }
+        
+        }
+        .line-container {
+          top:300px;
+          height:280px;
+        }
+      }
+    }
+  }
   @media (max-width:768px){
     display: none;
   }

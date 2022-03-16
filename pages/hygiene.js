@@ -69,8 +69,8 @@ const HygienePage = () => {
             Pour assurer la pérennité de nos traitements il est essentiel d&apos;enseigner les bons gestes d&apos;hygiène bucco-dentaire que vous pourrez réaliser chez vous. Au cabinet une salle est dédiée à l&apos;en&shy;seignement des techniques d&apos;hy&shy;giène bucco-dentaire et des conseils sur le matériel vous sera fourni. Ces techni&shy;ques sont essentielles à maîtri&shy;ser lors d&apos;atteinte du système d&apos;at&shy;tache de la dent appelée <em>maladie parodontale</em>.
           </p>
           <div className="img-coin">
-            Image coin hygiène
-          </div>
+            <Image className="img-coin" src="/images/brosses-curaprox.jpg" alt="brosses à dents souples" layout="fill" objectFit="cover"/>
+          </div>  
         </section>
           <div className="h3-title">
             <h3>
@@ -108,6 +108,14 @@ const HygienePage = () => {
                 </div>
                 <div>
                   Brossez-vous les dents au moins 2 fois par jour en partant de la gencive vers la dent. Toutes les faces de la dent doivent être brossées. 
+                </div>
+              </motion.li>
+              <motion.li variants={childList}>
+                <div>
+                  <i className="fa-solid fa-circle-play"></i>
+                </div>
+                <div>
+                  En cas de gencives sensibles, il est préférable d&apos;utiliser des brosses à dents souples. 
                 </div>
               </motion.li>
               <motion.li variants={childList}>
@@ -157,10 +165,10 @@ const MainWrapper = styled.main`
   }
 
   .img-coin{
+    position:relative;
     width:500px; 
-    height:300px;
+    height:450px;
     margin:0 auto;
-    border: 5px solid red;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -195,7 +203,14 @@ const MainWrapper = styled.main`
       width:100%;
     }
     .img-coin{
-      width:100%;
+      width:450px;
+      height:400px;
+    }
+  }
+  @media (max-width:500px){
+    .img-coin{
+      width:90%;
+      height:340px;
     }
   }
 `
