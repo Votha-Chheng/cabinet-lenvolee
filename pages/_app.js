@@ -15,6 +15,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <meta charSet="utf-8"/>
+        <meta httpEquiv='Content-Type' content='text/html; charset=utf-8'/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1"/>
         <meta name="description" content="Soins dentaires, esthétique du sourire et green dentistry sur Montpellier et sa région : bienvenue sur le site du cabinet dentaire L'Envolée"/>
         <meta property="og:title" content="Cabinet dentaire L'Envolée du Dr Sylvie Ma-Francin à Castelnau-le-Lez" />
