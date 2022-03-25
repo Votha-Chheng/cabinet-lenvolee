@@ -68,7 +68,7 @@ const ButtonCall = ({text}) => {
 
   return (
     <ButtonWrap ref={widthRef} style={{backgroundColor:`${triggerOne ? "whitesmoke" : "#363c51"}`}}>
-      <motion.a href="tel:0624861010" variants={mediaQuery>768 ? parentsParcoursAnim : ""} initial="initial" whileHover="animate" >
+      <motion.a href="tel:0467756811" variants={mediaQuery>768 ? parentsParcoursAnim : ""} initial="initial" whileHover="animate" >
         <motion.div 
           className="light"
           variants={parcoursAnim}
