@@ -373,7 +373,7 @@ const DivWrapper = styled.div`
         width: 100%;
         height:130px;
         transform:translate(0, -50%);
-        top: 60%;
+        top: 57.5%;
         left: 4%;
 
         &.second{
@@ -437,6 +437,20 @@ const DivWrapper = styled.div`
   } 
 
   @media (max-width:1360px){
+    .bandeau-first {
+      .flex-container{
+        .description-img{
+          p{
+            margin-top:20px ;
+          }
+        
+        }
+        .line-container {
+          top:275px;
+          height:180px;
+        }
+      }
+    }
     .container-bandeau {
       width: 95%;
 
@@ -487,12 +501,12 @@ const DivWrapper = styled.div`
         .description-img{
           padding-right: 0;
           p{
-            margin-top:10px ;
+            margin-top:30px ;
           }
         
         }
         .line-container {
-          top:300px;
+          top:280px;
           height:280px;
         }
       }
