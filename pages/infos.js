@@ -237,7 +237,7 @@ const InfosPratiques = () => {
                   <i className="fa-solid fa-circle-play"></i>
                 </div>
                 <div>
-                  Parking Place Charles de Gaulle (gratuit 2h) devant la boulangerie <em>Ribeiro</em> puis marcher en direction de l&apos;arrêt de tram Charles de gaulle.
+                  Parking Place Charles de Gaulle (gratuit 2h) devant la boulangerie <em>Ribeiro</em> puis marcher en direction de l&apos;arrêt de tram Charles de Gaulle.
                 </div> 
               </motion.li>
               <motion.div 
